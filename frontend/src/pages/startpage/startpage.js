@@ -4,9 +4,10 @@ import "./startpage.scss"
 class StartPage extends React.Component {
 
   render() {
+  this.props.onChange("hej")
     return (
       <div>
-        Find me in src/app.js!
+        hej
       </div>
     )
   }
