@@ -7,11 +7,10 @@ class StartPage extends React.Component {
   this.props.onChange("hej")
     return (
       <div>
-        hej
+      {this.props.name} - {this.props.main.temp} - {this.props.weather[0].description}
       </div>
     )
   }
-
 }
 
 export default StartPage
