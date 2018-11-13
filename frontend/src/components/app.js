@@ -2,6 +2,7 @@ import React from "react"
 import StartPage from "../pages/startpage/startpage.js"
 
 const query = `city name`;
+const weatherAPI = `http://api.openweathermap.org/data/2.5/weather?q=${query}`;
 
 class App extends React.Component {
 
@@ -11,10 +12,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}`)
+    fetch(weatherAPI)
       .then(response => response.json())
       .then(json => {
-        this.setState({ city: json })
+        this.setState({
+          city: json
+        })
       })
   }
 
