@@ -1,0 +1,78 @@
+{
+	"products": [{
+			"id": 1,
+    	"age": "xxx",
+			"name": "Mössa och vantar",
+			"image": "xxx",
+			"description": "xxx"
+		},
+    {
+  		"id": 2,
+    	"age": "xxx",
+  		"name": "Ullunderställ",
+  		"image": "xxx",
+  		"description": "xxx"
+  	},
+    {
+			"id": 3,
+    	"age": "xxx",
+  		"name": "Body",
+    	"image": "xxx",
+    	"description": "xxx"
+  	},
+    {
+    	"id": 4,
+    	"age": "xxx",
+    	"name": "Leggings",
+    	"image": "xxx",
+    	"description": "xxx"
+  	},
+    {
+      "id": 5,
+    	"age": "xxx",
+    	"name": "Tröja",
+      "image": "xxx",
+      "description": "xxx"
+	  },
+    {
+      "id": 6,
+    	"age": "xxx",
+    	"name": "Byxor",
+      "image": "xxx",
+      "description": "xxx"
+	  },
+    {
+      "id": 7,
+    	"age": "xxx",
+    	"name": "Jacka",
+      "image": "xxx",
+      "description": "xxx"
+	  },
+    {
+      "id": 8,
+    	"age": "xxx",
+    	"name": "Overall",
+      "image": "xxx",
+      "description": "xxx"
+	  },
+    {
+      "id": 9,
+    	"age": "xxx",
+    	"name": "Strumpor",
+      "image": "xxx",
+      "description": "xxx"
+	  },
+    {
+      "id": 10,
+    	"age": "xxx",
+    	"name": "Tossor",
+      "image": "xxx",
+      "description": "xxx"
+	  },
+    {
+      "id": 11,
+    	"age": "xxx",
+    	"name": "Gummistövlar",
+      "image": "xxx",
+      "description": "xxx"
+	  }
