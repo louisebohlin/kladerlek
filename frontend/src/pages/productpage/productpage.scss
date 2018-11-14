@@ -1,0 +1,38 @@
+.productPageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.productPageContainer {
+  width: 33.33%;
+}
+
+.clothingProductPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  width: 33.33%;
+  // background-color: pink;
+  // height: auto;
+  margin: 0px;
+  height: 400px;
+  background-color: pink;
+  img {
+    width: auto;
+    height: 300px;
+  }
+}
+
+.descProductPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 10px 150px 0 0;
+  width: 33.33%;
+  h2 {
+    color: #d8b1b1;
+    margin-bottom: 0px;
+  }
+}

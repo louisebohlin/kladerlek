@@ -1,16 +1,13 @@
-import React from "react"
+import React, { Component } from "react"
 import "./button.scss"
 
-class Button extends React.Component {
-
+class Button extends Component {
   render() {
     return (
-      <div>
-        Find me in src/app.js!
-      </div>
+
+      <button onClick={this.props.onClick} className="button">{this.props.children}</button>
     )
   }
-
 }
 
 export default Button

@@ -1,5 +1,48 @@
+@import url("https://use.typekit.net/uik4zpc.css");
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,500,600,700');
+$font-stack: 'ff-dagny-web-pro', sans-serif;
+$font-color: #393939;
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+p {
+  font-family: 'ff-dagny-web-pro', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: $font-color;
+}
+
+h1 {
+  font-family: 'ff-dagny-web-pro', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 1;
+  color: $font-color;
+}
+
+h2 {
+  font-family: 'ff-dagny-web-pro', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: $font-color;
+}
+
+h4 {
+  font-family: $font-stack;
+  font-size: 18px;
+  font-weight: 500;
+  color: $font-color;
 }
