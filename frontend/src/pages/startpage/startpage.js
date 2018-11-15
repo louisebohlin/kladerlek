@@ -70,17 +70,15 @@ handleCityChange = event => {
       </div>
       </div>
 
-
-      <Weather city={this.state.city}
-               temperature={this.state.temperature}
-               description={this.state.description} />
-
-
-      <div className="heroImageWrapper">
         <div className="heroImage">
+          <div className="heroWeather">
+            <Weather city={this.state.city}
+              temperature={this.state.temperature}
+              description={this.state.description} />
+            </div>
           <img src="./images/vader/regn.jpg" />
         </div>
-      </div>
+
 
 
 
