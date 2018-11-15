@@ -140,6 +140,12 @@
   flex-direction: column;
 }
 
+.cityDropdownWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .cityDropdown {
   margin-top: 100px;
   background-color: white;

@@ -13,11 +13,27 @@ class ProductPage extends React.Component {
         <div className="productPageContainer">
 
           <div className="clothingProductPage">
-            <img src="./images/overall.svg"/>
+            <img src="./images/mini/overall.svg"/>
+
+            <img src="./images/mini/overall.svg"/>
+            <img src="./images/mini/overall.svg"/>
+
           </div>
           <div className="descProductPage">
+            <div className="descProductPageText">
+              <h2>Test</h2>
+              <p>hej</p>
+            </div>
+            <div className="descProductPageText">
+              <h2>Test</h2>
+              <p>hej</p>
+              </div>
+              <div className="descProductPageText">
+
             <h2>Test</h2>
             <p>hej</p>
+            </div>
+
           </div>
         </div>
         </div>
