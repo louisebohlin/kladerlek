@@ -53,8 +53,8 @@ handleCityChange = event => {
   render() {
     return (
       <div>
-      <div className="startPageWrapper">
-      <Header />
+        <div className="startPageWrapper">
+        <Header />
 
 
       <div className="cityDropdownWrapper">
@@ -84,46 +84,38 @@ handleCityChange = event => {
 
 
 
+      <div className="iconContainer">
+        <h1>Hur gammal är ditt barn?</h1>
+        <div className="iconContainerButtons">
+          <div className="iconMini">
+            <img src="./images/mini/ikon_mini_blk.svg" />
+            <h2>0-6 mån</h2>
           </div>
-
-          <div className="heroImageWrapper">
-            <div className="heroImage">
-              <img src="./images/vader/regn.jpg" />
+          <div className="iconCrawl">
+            <img src="./images/crawl/ikon_crawl_blk.svg" />
+            <h2>6-2 år</h2>
             </div>
+            <div className="iconCrawl">
+              <img src="./images/crawl/ikon_crawl_blk.svg" />
+              <h2>2-10 år</h2>
+              </div>
+          </div>
           </div>
 
-          <div className="iconContainer">
-            <h1>Hur gammal är ditt barn?</h1>
-            <div className="iconContainerButtons">
-              <div className="iconMini">
-                <img src="./images/mini/ikon_mini_blk.svg" />
-                <h2>0-6 mån</h2>
-              </div>
-              <div className="iconCrawl">
-                <img src="./images/crawl/ikon_crawl_blk.svg" />
-                <h2>6-2 år</h2>
-              </div>
-              <div className="iconCrawl">
-                <img src="./images/crawl/ikon_crawl_blk.svg" />
-                <h2>2-10 år</h2>
-              </div>
-            </div>
-          </div>
+      {productsJson.product.map((product) => {
+          return <Product name={product.name}
+                   image={product.image}
+                   age={product.age}
+                   description={product.description}
+   />
+      })}
 
-          {productsJson.product.map((product) => {
-            return <Product name={product.name}
-              image={product.image}
-              age={product.age}
-              description={product.description}
-            />
-          })}
-
-          <div className="buttonToProductPage">
-            <Link to="/productpage">
-              <button className="productPageButton">Add product</button>
-            </Link>
-          </div>
-        </div>
+      <div className="buttonToProductPage">
+        <Link to="/productpage">
+          <button className="productPageButton">Add product</button>
+      </Link>
+      </div>
+      </div>
 
       </div>
 
