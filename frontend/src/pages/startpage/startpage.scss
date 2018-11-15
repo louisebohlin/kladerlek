@@ -214,5 +214,23 @@
 }
 
 .weatherWrapper {
-  
+    h1, h2, p {
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  h1 {
+    font-size: 200px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px;
+  }
 }
