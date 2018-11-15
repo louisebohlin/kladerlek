@@ -3,14 +3,14 @@
 }
 
 
-.heroImageWrapper {
-  width: 100%;
-  background-color: #000000;
-  // background: #2c3e50;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to top, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to top, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.heroWeather {
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  top: 30%;
 }
 
 .heroImage{
@@ -27,7 +27,6 @@
 .heroImage img {
   height: auto;
   width: 100%;
-  opacity: 0.3;
   // opacity: 0.8;
   z-index: 2;
 }
