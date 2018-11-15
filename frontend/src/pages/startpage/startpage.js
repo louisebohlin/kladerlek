@@ -53,8 +53,8 @@ handleCityChange = event => {
   render() {
     return (
       <div>
-      <div className="startPageWrapper">
-      <Header />
+        <div className="startPageWrapper">
+        <Header />
 
 
       <div className="cityDropdownWrapper">

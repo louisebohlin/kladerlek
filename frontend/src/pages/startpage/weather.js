@@ -1,4 +1,5 @@
 import React from "react"
+import "./startpage.scss"
 
 class Weather extends React.Component {
 
