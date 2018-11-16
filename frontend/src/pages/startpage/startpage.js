@@ -1,7 +1,7 @@
 import React from "react"
 import { HashRouter as Router, Route, Link } from "react-router-dom"
-import Header from  "../../components/header/header.js"
-import Footer from  "../../components/footer/footer.js"
+import Header from "../../components/header/header.js"
+import Footer from "../../components/footer/footer.js"
 import Product from "./product.js"
 import Button from "../../components/button/button.js"
 import Weather from "./weather.js"
@@ -17,7 +17,7 @@ class StartPage extends React.Component {
   }
 
 componentDidMount() {
-  this.getWeather()
+    this.getWeather()
 }
 
 handleCityChange = event => {
@@ -26,7 +26,7 @@ handleCityChange = event => {
   })
 }
 
-  getWeather = (e) => {
+  getWeather = e => {
     const weatherAPI = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&units=metric&APPID=ae7f18bdb699e35f5dd3399dba9247c1`;
     fetch(weatherAPI)
       .then(response => response.json())
@@ -48,25 +48,21 @@ handleCityChange = event => {
     }
   }
 
-
-
-
   render() {
     return (
       <div>
         <div className="startPageWrapper">
-        <Header />
+          <Header />
 
-
-      <div className="cityDropdownWrapper">
+          <div className="cityDropdownWrapper">
       <div className="cityDropdown">
-        <select onChange={this.handleCityChange}>
-          <option value="">Välj stad </option>
-          <option value="Stockholm">Stockholm</option>
-          <option value="Göteborg">Göteborg</option>
-          <option value="Malmö">Malmö</option>
-          <option value="Longyearbyen">Longyearbyen</option>
-        </select>
+          <select onChange={this.handleCityChange}>
+            <option value="">Välj stad </option>
+            <option value="Stockholm">Stockholm</option>
+            <option value="Göteborg">Göteborg</option>
+            <option value="Malmö">Malmö</option>
+            <option value="Longyearbyen">Longyearbyen</option>
+          </select>
       </div>
       </div>
 

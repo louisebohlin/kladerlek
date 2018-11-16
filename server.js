@@ -16,23 +16,29 @@ const Product = mongoose.model("Product", {
   description: String,
   url: String,
   image: String,
+  age: String,
   category: String
 })
+
+// const products = [
+//   new Product({
+//     title: "Leggings med blommönster",
+//     price: 179,
+//     description: "Blommönstrade leggings. Plagget har elastisk midja som går att regleras med knapphålsresår.",
+//     url: "https://www.polarnopyret.se/globalassets/productimages-polarnopyret/7325852924056.jpg?ref=4F32C9773D&w=320&h=320&mode=max",
+//     image: "https://www.polarnopyret.se/globalassets/productimages-polarnopyret/7325852924056.jpg?ref=4F32C9773D&w=320&h=320&mode=max",
+//     age: "walk",
+//     category: "Nederdelar"
+//   })
+// ]
+//
+// products.forEach(product => {
+//   product.save().then(() => { console.log("Created", product.title )})
+// })
 
 app.get("/products", (req, res) => {
   Product.find().then(products => {
     res.json(products)
-  })
-})
-
-app.post("/products", (req, res) => {
-  const jsonBody = req.body
-  const product = new Product(jsonBody)
-
-  product.save().then(() => {
-    res.status(201).json({ created: true })
-  }).catch(err => {
-    res.status(400).json({ created: false, errorMsg: err.message })
   })
 })
 
