@@ -17,6 +17,11 @@ const Product = mongoose.model("Product", {
   url: String,
   image: String,
   age: String,
+  weather: {
+    type: String,
+    required: true,
+    enum: ["Kallt", "Minusgrader", "Lagom"]
+  },
   category: String
 })
 
@@ -28,6 +33,11 @@ const Product = mongoose.model("Product", {
 //     url: "https://www.polarnopyret.se/globalassets/productimages-polarnopyret/7325852924056.jpg?ref=4F32C9773D&w=320&h=320&mode=max",
 //     image: "https://www.polarnopyret.se/globalassets/productimages-polarnopyret/7325852924056.jpg?ref=4F32C9773D&w=320&h=320&mode=max",
 //     age: "walk",
+//     weather: {
+//        type: String,
+//        required: true,
+//        enum: ["Kallt", "Minusgrader", "Lagom"]
+//      },
 //     category: "Nederdelar"
 //   })
 // ]
