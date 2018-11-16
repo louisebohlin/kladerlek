@@ -22,7 +22,7 @@
   background-size: cover;
   width: 100%;
   overflow: hidden;
-  height: 600px;
+  height: 700px;
   z-index: 0;
   position: relative;
 }
@@ -53,12 +53,17 @@
   justify-content: center;
   width: 100%;
   height: 400px;
-  // background-color: #e6c7bc;
-  background-color: #f8f3f0;
+  // background-color: #f6f1ef;
+  background-color: #74cbbf;
+  background-color: #05464f;
   // background-color: #fae5dd;
   // background-color: #96a4a4;
   h1 {
-    color: #393939;
+    font-family: 'neue-haas-grotesk-display',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 50px;
   img {
@@ -75,7 +80,49 @@
   flex-direction: row;
   justify-content: center;
   margin-bottom: 60px;
+  button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 20px;
+    height: 50px;
+    width: 200px;
+    margin: 10px 0px;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+    // background-color: Transparent;
+    // border: 2px solid #000;
+    // background-color: #c67f66;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    font-family: 'neue-haas-grotesk-display',sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    transition: width  0.1s;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    color: #ffffff;
+    p {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+
+    }
+  }
 }
+
+button:hover {
+  width: 220px;
+  background-color: #ffffff;
+  // color: #ffffff;
+  p {
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 
 .iconMini {
   display: flex;
@@ -148,20 +195,49 @@
   justify-content: center;
 }
 
+// .cityDropdown {
+//   margin-top: 100px;
+//   background-color: white;
+//   position: absolute;
+//   z-index: 2;
+//   width: 300px;
+// }
+//
+// .cityDropdown select {
+//   width: 300px;
+//   height: 35px;
+//   font-family: 'neue-haas-grotesk-display',sans-serif;
+//   font-size: 18px;
+//   font-weight: 400;
+// }
+
 .cityDropdown {
   margin-top: 100px;
-  background-color: white;
-  position: absolute;
-  z-index: 2;
-  width: 300px;
+   background-color: white;
+   position: absolute;
+   z-index: 2;
+   width: 300px;
+   text-align: center;
+
+    // background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
 }
 
 .cityDropdown select {
-  width: 300px;
-  height: 35px;
-  font-family: 'neue-haas-grotesk-display',sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+    width: 400px;
+    height: 45px;
+    font-family: 'neue-haas-grotesk-display',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.cityDropdown select:focus {
+    outline: none;
 }
 
 .clothingWrapper {
@@ -203,7 +279,8 @@
   width: 55%;
   h2 {
     // color: #6d8a89;
-    color: #d8b1b1;
+    color: #393939;
+    // color: #d8b1b1;
     margin-bottom: 0px;
   }
 }
@@ -211,7 +288,8 @@
 .buttonToProductPage {
   display: flex;
   justify-content: center;
-  button {
+  button:hover {
+    background-color: #fd6f64;
   }
 }
 

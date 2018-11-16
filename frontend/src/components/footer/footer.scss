@@ -1,0 +1,104 @@
+@import url("https://use.typekit.net/lgh8cir.css");
+
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-info p {
+  font-family: "neue-haas-grotesk-display",sans-serif;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer-social p {
+  font-family: "neue-haas-grotesk-display",sans-serif;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
+.footer {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f1ef;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  color: #000000;
+  height: 250px;
+  padding: 0 20px;
+  // width: 900px;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+
+.footer-header {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.footer-header-soc {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.footer-header h4 {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  margin-bottom: 30px;
+}
+
+.footer-header-soc h4 {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+
+.footer-info {
+  margin-left: 50px;
+  padding: 0px;
+  width: 25%;
+}
+
+.footer-social {
+  margin-left: 50px;
+  padding: 0px;
+  width: 25%;
+}
+
+.footer-container-logo{
+  margin-left: 100px;
+  padding: 0px;
+  width: 25%;
+  img {
+    width:150px;
+    height: auto;
+  }
+}
+
+
+
+
+.footer a:hover {
+  text-decoration: underline;
+}

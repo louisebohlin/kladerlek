@@ -1,6 +1,7 @@
 import React from "react"
 import { HashRouter as Router, Route, Link } from "react-router-dom"
 import Header from  "../../components/header/header.js"
+import Footer from  "../../components/footer/footer.js"
 import Product from "./product.js"
 import Button from "../../components/button/button.js"
 import Weather from "./weather.js"
@@ -58,10 +59,9 @@ handleCityChange = event => {
 
 
       <div className="cityDropdownWrapper">
-
       <div className="cityDropdown">
         <select onChange={this.handleCityChange}>
-          <option value="">All</option>
+          <option value="">Välj stad </option>
           <option value="Stockholm">Stockholm</option>
           <option value="Göteborg">Göteborg</option>
           <option value="Malmö">Malmö</option>
@@ -86,19 +86,26 @@ handleCityChange = event => {
         <h1>Hur gammal är ditt barn?</h1>
         <div className="iconContainerButtons">
           <div className="iconMini">
-            <img src="./images/mini/ikon_mini_blk.svg" />
-            <h2>0-6 mån</h2>
+            <img src="./images/mini/ikon_mini_wht.svg" />
+            <div className="buttonIconContainer">
+              <button className="buttonIcon"><p>0-6mån</p></button>
+            </div>
           </div>
           <div className="iconCrawl">
-            <img src="./images/crawl/ikon_crawl_blk.svg" />
-            <h2>6-2 år</h2>
-            </div>
-            <div className="iconCrawl">
-              <img src="./images/crawl/ikon_crawl_blk.svg" />
-              <h2>2-10 år</h2>
-              </div>
+            <img src="./images/crawl/ikon_crawl_wht.svg" />
+            <div className="buttonIconContainer">
+              <button className="buttonIcon"><p>6mån-2 år</p></button>
           </div>
           </div>
+          <div className="iconCrawl">
+            <img src="./images/crawl/ikon_crawl_wht.svg" />
+          <div className="buttonIconContainer">
+            <button className="buttonIcon"><p>2-8 år</p></button>
+          </div>
+        </div>
+      </div>
+      </div>
+
 
       {productsJson.product.map((product) => {
           return <Product name={product.name}
@@ -113,6 +120,9 @@ handleCityChange = event => {
           <button className="productPageButton">Add product</button>
       </Link>
       </div>
+
+      <Footer />
+
       </div>
 
       </div>
