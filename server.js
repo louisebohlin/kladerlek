@@ -13,6 +13,8 @@ const Product = mongoose.model("Product", {
   itemID: Number,
   title: String,
   price: Number,
+  description: String,
+  url: String,
   image: String,
   category: String
 })
@@ -20,6 +22,17 @@ const Product = mongoose.model("Product", {
 app.get("/products", (req, res) => {
   Product.find().then(products => {
     res.json(products)
+  })
+})
+
+app.post("/products", (req, res) => {
+  const jsonBody = req.body
+  const product = new Product(jsonBody)
+
+  product.save().then(() => {
+    res.status(201).json({ created: true })
+  }).catch(err => {
+    res.status(400).json({ created: false, errorMsg: err.message })
   })
 })
 
