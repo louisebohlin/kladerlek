@@ -66,14 +66,21 @@ handleCityChange = event => {
       </div>
       </div>
 
-        <div className="heroImage">
-          <div className="heroWeather">
-            <Weather city={this.state.city}
-              temperature={this.state.temperature}
-              description={this.state.description} />
-            </div>
-          <img src="./images/vader/regn.jpg" />
+
+      <div className="VideoContainer">
+        <div className="VideoOverlay">
+        <div className="heroWeather">
+          <Weather city={this.state.city}
+            description={this.state.description}
+            temperature={this.state.temperature}/>
         </div>
+      <video id="background-video" loop autoPlay>
+        <source src="./images/video_start.mp4" type="video/mp4" />
+      </video>
+      </div>
+      </div>
+
+
 
 
 
@@ -102,14 +109,17 @@ handleCityChange = event => {
       </div>
       </div>
 
+      <div className="ProductPageApp">
 
       {productsJson.product.map((product) => {
           return <Product name={product.name}
                    image={product.image}
+                   gif={product.gif}
                    age={product.age}
                    description={product.description}
    />
       })}
+      </div>
 
       <div className="buttonToProductPage">
         <Link to="/productpage">

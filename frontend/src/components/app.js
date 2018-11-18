@@ -7,14 +7,12 @@ class App extends React.Component {
 
 render() {
     return (
-      <div className="appWrapper">
-        <Router>
-          <div className="navigation">
-            <Route path="/" exact="true" component={StartPage} />
-            <Route path="/productpage" exact="true" component={ProductPage} />
-          </div>
-        </Router>
-      </div>
+      <Router>
+        <div>
+          <Route path="/" exact="true" component={StartPage} />
+          <Route path="/productpage" exact="true" component={ProductPage} />
+        </div>
+      </Router>
     )
   }
 }

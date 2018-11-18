@@ -4,28 +4,74 @@ import Header from "../../components/header/header.js"
 import Footer from "../../components/footer/footer.js"
 import "./productpage.scss"
 
+
 class ProductPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="productPageWrapper">
-          <Header />
-          <div className="productPageContainer">
-            <div className="clothingProductPage">
-              <img src="./images/mini/overall.svg"/>
-            </div>
-            <div className="descProductPage">
-              <div className="descProductPageText">
-                <h2>Test</h2>
-                <p>hej</p>
-              </div>
-            </div>
-          </div>
+    <div>
+      <Header />
+      <div className="VideoContainer">
+        <div className="VideoOverlay">
+      <video id="background-video-product" loop autoPlay>
+        <source src="./images/video-product.mp4" type="video/mp4" />
+      </video>
+      </div>
+      </div>
 
-        </div>
+        <div className="productPageWrapper">
+
+          <h2>Överdelar</h2>
+            <div className="ProductPageContainer">
+              <div className="clothingProductPage">
+                <img src="./images/prod.jpg"/>
+                <div className="descProductPageOverlay">
+                  <div className="descProductPageText">
+                    <h2>Test</h2>
+                    <p>hej</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="clothingProductPage">
+                  <img src="./images/prod.jpg"/>
+                  <div className="descProductPageOverlay">
+                    <div className="descProductPageText">
+                      <h2>Test</h2>
+                      <p>hej</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="clothingProductPage">
+                    <img src="./images/prod.jpg"/>
+                    <div className="descProductPageOverlay">
+                      <div className="descProductPageText">
+                        <h2>Test</h2>
+                        <p>hej</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+                    <h2>Underdelar</h2>
+                    <div className="ProductPageContainer">
+                    <div className="clothingProductPage">
+                      <img src="./images/prod.jpg"/>
+                      <div className="descProductPageOverlay">
+                        <div className="descProductPageText">
+                          <h2>Test</h2>
+                          <p>hej</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+
+
+
         <Footer />
       </div>
+      </div>
+
     )
   }
 

@@ -27,6 +27,29 @@
   position: relative;
 }
 
+.VideoContainer {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  height: 700px;
+  z-index: 0;
+  position: relative;
+}
+
+.VideoContainer video {
+  height: auto;
+  width: 100%;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.VideoOverlay {
+  background-color: black;
+  z-index: 0;
+}
+
 .heroImage img {
   height: auto;
   width: 100%;
@@ -240,43 +263,57 @@ button:hover {
     outline: none;
 }
 
-.clothingWrapper {
+.ProductPageApp {
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 0px;
-  margin: 0px 0px 0px 0px;
-  // height: 400px;
-  // width: 100%;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.clothingMini {
+.clothingWrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 10px 10px 10px;
+  flex-direction: column;
   width: 45%;
-  // background-color: pink;
-  // height: auto;
-  margin: 0px;
-  height: 400px;
+  justify-content: space-between;
+}
+
+// .clothingMini img {
+//   width: 60%;
+//   overflow: hidden;
+//   object-fit: contain;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: 30px;
+// }
+
+.clothingMini{
+  display: flex;
+  flex-direction: column;
   img {
-    width: auto;
-    height: 300px;
-  }
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+  object-fit: contain;
+}
   p {
     color: #393939;
   }
 }
 
 .descMini {
+  margin-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  padding:30px 150px 0 0;
-  width: 55%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  height: 300px;
+
   h2 {
     // color: #6d8a89;
     color: #393939;
@@ -284,6 +321,58 @@ button:hover {
     margin-bottom: 0px;
   }
 }
+
+
+// .clothingWrapper {
+//   display: flex;
+//   // flex-direction: column;
+//   flex-direction: row;
+//   flex-flow: nowrap;
+//   justify-content: center;
+//   padding: 0px;
+//   margin: 0px 0px 0px 0px;
+//   width: 25%;
+  // height: 400px;
+  // width: 100%;
+// }
+//
+// .clothingMini {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 10px 10px 10px 10px;
+  // width: 45%;
+  // object-fit: contain;
+
+
+  // background-color: #febfa2;
+  // height: auto;
+//   margin: 0px;
+//   height: 400px;
+//   img {
+//     width: auto;
+//     height: 300px;
+//   }
+//   p {
+//     color: #393939;
+//   }
+// }
+//
+// .descMini {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   text-align: left;
+//   padding:30px 150px 0 0;
+  // width: 25%;
+  // width: 55%;
+  // h2 {
+    // color: #6d8a89;
+    // color: #393939;
+    // color: #d8b1b1;
+//     margin-bottom: 0px;
+//   }
+// }
 
 .buttonToProductPage {
   display: flex;
