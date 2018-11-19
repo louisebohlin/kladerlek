@@ -21,9 +21,9 @@
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: auto;
   overflow: hidden;
-  height: 700px;
+  height: auto;
   z-index: 0;
   position: relative;
   img {
@@ -37,11 +37,9 @@
 .HeroContainer {
   display: none;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   overflow: hidden;
-  height: 500px;
+  height: auto;
   z-index: 0;
   position: relative;
 }
@@ -52,8 +50,7 @@
   background-size: cover;
   width: 100%;
   overflow: hidden;
-  height: 700px;
-  z-index: 0;
+  height: auto;
   position: relative;
     video {
       height: auto;
@@ -443,5 +440,8 @@ button:hover {
     flex-direction: column;
     width: 100%;
     padding: 0px 30px;
+  }
+  h1 {
+    font-size: 20px;
   }
 }
