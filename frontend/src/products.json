@@ -1,51 +1,35 @@
 {
 	"product": [{
 			"id": 1,
-			"age": "0-6",
+			"age": "mini",
 			"name": "Body",
 			"image": "./images/mini/body.svg",
 			"description": "Ett av de mest mångsidiga klädesplaggen och ett måste i alla barns garderober är body eller bodysuits. De är ett perfekt första lager när du ska klä ditt barn varmt. Plagget fungerar alldeles utmärkt att använda både till vardags men också som sov- och nattplagg."
 		},
 		{
 			"id": 2,
-			"age": "0-6",
-			"name": "",
-			"image": "",
-			"gif": "./images/mini/body.gif",
-			"description": ""
-		},
-		{
-			"id": 3,
-			"age": "0-6",
+			"age": "mini",
 			"name": "Leggings",
 			"image": "./images/mini/leggings.svg",
 			"description": "Leggings är det perfekta lekplagget, som finns med olika mönster eller helt enfärgade. Med ett par leggings över bodyn håller du din bebis varm. För de riktigt kalla dagarna rekommenderas tights/långkalsonger av varm ull som absorberar och släpper ut fukt."
 		},
     {
-  		"id": 4,
-    	"age": "0-6",
+  		"id": 3,
+    	"age": "mini",
   		"name": "Ulloverall",
   		"image": "./images/mini/ull_overall_blk.svg",
   		"description": "Ull är ett naturfiber som håller värmen bättre än alla andra material, även om barnet skulle bli våt genom sina ytterplagg. Underställ är perfekt att ha under overallen då det effektivt suger upp fukt och håller barnet varm och torr. Frottén håller luften intill kroppen som ett värmande lager, och ullen i sig håller värmen samtidigt som den andas."
   	},
 		{
-			"id": 2,
-			"age": "0-6",
-			"name": "",
-			"image": "",
-			"gif": "./images/mini/shoes.gif",
-			"description": ""
-		},
-		{
-			"id": 5,
-			"age": "0-6",
+			"id": 4,
+			"age": "mini",
 			"name": "Strumpor",
 			"image": "./images/mini/strumpor.svg",
 			"description": "För extra kalla dagar ha ett par ullstrumpor som lager 1 - innerlagret håller kroppen torr och varm. Beroende på temperaturen avgör du om du behöver en tjockare ullstrumpa över eller om det räcker med en vanlig bomullsstrumpa. Försök hitta strumpor som sitter bra och håller sig kvar på foten när bebisen rör sig och sparkar med benen."
 		},
 		{
-			"id": 6,
-			"age": "0-6",
+			"id": 5,
+			"age": "mini",
 			"name": "Fleeceossor",
 			"image": "./images/mini/tossor.svg",
 			"description": "Vindtäta, vadderade fleecetossor som passar perfect för den nyfödda. Tossorna är tillverkade i återvunnen polyester och har ett mjukt foder i 100% ekologisk bomull, samt ribbad mudd. För extra kalla dagar ha ytterligare ett lager med tunnare ullstrumpa samt en tjockare ullstrumpa över."
@@ -59,56 +43,56 @@
 			},
 		{
 			"id": 8,
-			"age": "0-6",
+			"age": "mini",
 			"name": "Fleeceoverall",
 			"image": "./images/mini/fleeceoverall.svg",
 			"description": "Varmt och torrt med ett lager fleece. En vindfleeceoverall med två dragkedjor håller ditt barn värmen hela dagen. Den är lätt att öppna upp om du till exempel ska gå in i en butik eller på ett café och vill slippa krångla med kläderna. Du behöver inte en fleeceoverall om du har en åkpåse. Så länge ditt barn inte börjar sitta upp eller åker i till exempel en pulka klarar man sig fint med en tunn vindfleeceoverall och åkpåse."
 			},
 		{
 			"id": 9,
-			"age": "6-2",
+			"age": ["walk", "talk"],
 			"name": "Tröja",
 			"image": "./images/crawl/troja.svg",
 			"description": "En tröja i ekologisk bomull är ett perfekt basplagg att ha i garderoben. För de extra kalla kvällarna är tröjorna av merino ull ett perfekt alternativ. Ull är ett naturfiber som håller värmen bättre än alla andra material, även om barnet skulle bli våt genom sina ytterplagg. Underställ är perfekt att ha under overallen, jackan och termobyxorna."
 		},
     {
       "id": 10,
-    	"age": "6-2",
+			"age": ["walk", "talk"],
     	"name": "Byxor",
       "image": "./images/crawl/byxor.svg",
       "description": "Byxor är ett ytterst praktiskt plagg för barn i alla åldrar. Vare sig det är frågan om byxor till barn eller till ungdomar, så är hållbarheten av plagget viktigt."
 	  },
     {
       "id": 11,
-    	"age": "6-2",
+			"age": ["walk", "talk"],
     	"name": "Jacka",
       "image": "xxx",
       "description": "xxx"
 	  },
     {
       "id": 12,
-    	"age": "6-2",
+			"age": ["walk", "talk"],
     	"name": "Overall",
       "image": "xxx",
       "description": "xxx"
 	  },
     {
       "id": 13,
-    	"age": "6-2",
+			"age": ["walk", "talk"],
     	"name": "Strumpor",
 			"image": "./images/mini/strumpor.svg",
 			"description": "För extra kalla dagar ha ett par ullstrumpor som lager 1 - innerlagret håller kroppen torr och varm. Beroende på temperaturen avgör du om du behöver en tjockare ullstrumpa över eller om det räcker med en vanlig bomullsstrumpa. Försök hitta strumpor som sitter bra och håller sig kvar på foten när bebisen rör sig och sparkar med benen."
 		},
 		{
 			"id": 14,
-			"age": "0-6",
+			"age": ["walk", "talk"],
 			"name": "Mössa och vantar",
 			"image": "./images/mini/mossavante_blk.svg",
 			"description": "Till nyfödda rekommenderas en tunn liten mössa (gärna en hjälmmössa) som skyddar mot väder och vind oavsett årstid. Om det är riktigt kallt kan man ha en extra bomullsmössa över hjälmmössan. Är man något äldre räcker det med en vanlig mössa som har lite skydd för öronen."
 			},
     {
       "id": 15,
-    	"age": "6-2",
+    	"age": ["walk", "talk"],
     	"name": "Gummistövlar",
       "image": "./images/crawl/stovlar.svg",
       "description": "Ett par vattentäta gummistövlar förvandlar regn och rusk till en barnlek. Håller dina barns fötter torra och finns både fodrade samt ofodrade varienter beroende på vilken säsong det är."

@@ -30,12 +30,12 @@
 .VideoContainer video {
   height: auto;
   width: 100%;
-  opacity: 0.5;
+  // opacity: 0.5;
   z-index: 2;
 }
 
 .VideoOverlay {
-  background-color: black;
+  // background-color: black;
   z-index: 0;
 }
 
