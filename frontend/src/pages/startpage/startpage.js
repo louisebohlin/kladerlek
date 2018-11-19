@@ -112,6 +112,17 @@ handleCityChange = event => {
       </div>
       </div>
 
+      <div className="HeroContainer">
+            <div className="heroWeather">
+              <Weather city={this.state.city}
+                description={this.state.description}
+                temperature={this.state.temperature}/>
+            </div>
+            <div className="heroImage">
+            <img src="./images/vader/regn.jpg" />
+          </div>
+          </div>
+          
       <div className="iconContainer">
         <h1>Hur gammal är ditt barn?</h1>
         <div className="iconContainerButtons">
