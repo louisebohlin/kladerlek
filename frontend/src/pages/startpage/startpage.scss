@@ -21,11 +21,13 @@
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
+  width: 100%;
   overflow: hidden;
   height: auto;
   z-index: 0;
   position: relative;
+  margin: 0;
+
   img {
     height: auto;
     width: 100%;
@@ -52,6 +54,7 @@
   overflow: hidden;
   height: auto;
   position: relative;
+  margin: 0;
     video {
       height: auto;
       width: 100%;
@@ -412,6 +415,8 @@ button:hover {
     letter-spacing: 1px;
   }
 }
+
+
 
 @media screen and (max-width: 700px) {
   .VideoContainer {
