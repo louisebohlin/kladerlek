@@ -9,11 +9,16 @@ import "./startpage.scss"
 
 const productsJson = require("../../products.json")
 
+const LAGOM = "lagom"
+const MINUSGRADER = "minusgrader"
+const KALLT = "kallt"
+
 class StartPage extends React.Component {
   state = {
     city: "Stockholm, Sweden",
     filter: "",
-    weather: null
+    weather: null,
+    productTypes: []
   }
 
 componentDidMount() {
@@ -34,7 +39,8 @@ handleCityChange = event => {
         this.setState({
           weather: json,
           city: json.name,
-          temperature: json.main.temp.toFixed(1),
+          temperature: json.main.temp.toFixed(1) + '\xB0C',
+          temperatureNumber: json.main.temp,
           description: json.weather[0].description
         })
       }).catch(err => {
@@ -47,6 +53,32 @@ handleCityChange = event => {
       this.getWeather()
     }
   }
+
+  tempToWeatherType = (temp) => {
+    if (temp < 0.0) {
+      return ["lagom", "kallt", "minusgrader"]
+    } else if (temp > 15.0) {
+      return ["lagom"]
+    } else {
+      return ["lagom", "kallt"]
+    }
+  }
+
+  filterProductTypes = (age )=> {
+    const result = this.tempToWeatherType(this.state.temperatureNumber)
+
+    const filteredProductTypes = productsJson.product.filter((item) => {
+      if (item.age.indexOf(age) && result.indexOf(item.weather)) {
+        return true
+        console.log(filteredProductTypes)
+      } else {
+        return false
+    }
+  })
+
+  this.setState({productTypes: filteredProductTypes})
+}
+
 
   render() {
     return (
@@ -81,40 +113,35 @@ handleCityChange = event => {
       </div>
 
       <div className="HeroContainer">
-        <div className="heroWeather">
-          <Weather city={this.state.city}
-            description={this.state.description}
-            temperature={this.state.temperature}/>
-        </div>
-        <div className="heroImage">
-        <img src="./images/vader/regn.jpg" />
-      </div>
-      </div>
-
-
-
-
-
-
+            <div className="heroWeather">
+              <Weather city={this.state.city}
+                description={this.state.description}
+                temperature={this.state.temperature}/>
+            </div>
+            <div className="heroImage">
+            <img src="./images/vader/regn.jpg" />
+          </div>
+          </div>
+          
       <div className="iconContainer">
         <h1>Hur gammal är ditt barn?</h1>
         <div className="iconContainerButtons">
           <div className="iconMini">
             <img src="./images/mini/ikon_mini_wht.svg" />
             <div className="buttonIconContainer">
-              <button className="buttonIcon"><p>0-6mån</p></button>
+              <button onClick={() => this.filterProductTypes("mini")}>0-6mån</button>
             </div>
           </div>
           <div className="iconCrawl">
             <img src="./images/crawl/ikon_crawl_wht.svg" />
             <div className="buttonIconContainer">
-              <button className="buttonIcon"><p>6mån-2 år</p></button>
+              <button onClick={() => this.filterProductTypes("walk")}>6mån-2 år</button>
           </div>
           </div>
           <div className="iconCrawl">
             <img src="./images/crawl/ikon_crawl_wht.svg" />
           <div className="buttonIconContainer">
-            <button className="buttonIcon"><p>2-8 år</p></button>
+            <button onClick={() => this.filterProductTypes("talk")}>2-8 år</button>
           </div>
         </div>
       </div>
@@ -122,7 +149,7 @@ handleCityChange = event => {
 
       <div className="ProductPageApp">
 
-      {productsJson.product.map((product) => {
+      {this.state.productTypes.map((product) => {
           return <Product name={product.name}
                    image={product.image}
                    gif={product.gif}
