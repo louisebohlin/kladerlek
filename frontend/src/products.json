@@ -1,7 +1,7 @@
 {
 	"product": [{
 			"id": 1,
-			"age": "mini",
+			"age": ["mini"],
 			"name": "Body",
 			"image": "./images/mini/body.svg",
 			"weather": "lagom",
@@ -9,7 +9,7 @@
 		},
 		{
 			"id": 2,
-			"age": "mini",
+			"age": ["mini"],
 			"name": "Byxor",
 			"image": "./images/crawl/byxor.svg",
 			"weather": "lagom",
@@ -25,7 +25,7 @@
 		},
 		{
 			"id": 4,
-			"age": "mini",
+			"age": ["mini"],
 			"name": "Tossor",
 			"image": "./images/mini/tossor.svg",
 			"weather": "lagom",
@@ -83,9 +83,9 @@
 			"id": 11,
 			"age": ["mini", "walk", "talk"],
 			"name": "Ull",
-			"image": "",
+			"image": "./images/mini/ull.svg",
 			"weather": "minusgrader",
-			"description": "xxx"
+			"description": "Tänk på att ha ullställ de extra kalla dagarna. Ull är ett naturfiber som håller värmen bättre än alla andra material, även om barnet skulle bli våt genom sina ytterplagg. Underställ är perfekt att ha under overallen, jackan och termobyxorna."
 		}
 	]
 }
