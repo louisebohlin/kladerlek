@@ -23,16 +23,16 @@ class StartPage extends React.Component {
 
 componentDidMount() {
     this.getWeather()
-}
+  }
 
 handleCityChange = event => {
   this.setState({
-    city: event.target.value,
+    city: event.target.value
   })
 }
 
   getWeather = e => {
-    const weatherAPI = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&units=metric&APPID=ae7f18bdb699e35f5dd3399dba9247c1`;
+    const weatherAPI = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&units=metric&APPID=ae7f18bdb699e35f5dd3399dba9247c1`
     fetch(weatherAPI)
       .then(response => response.json())
       .then(json => {
@@ -54,7 +54,7 @@ handleCityChange = event => {
     }
   }
 
-  tempToWeatherType = (temp) => {
+  tempToWeatherType = temp => {
     if (temp < 0.0) {
       return ["lagom", "kallt", "minusgrader"]
     } else if (temp > 15.0) {
@@ -64,21 +64,19 @@ handleCityChange = event => {
     }
   }
 
-  filterProductTypes = (age )=> {
+  filterProductTypes = age => {
     const result = this.tempToWeatherType(this.state.temperatureNumber)
-
-    const filteredProductTypes = productsJson.product.filter((item) => {
+    const filteredProductTypes = productsJson.product.filter(item => {
       if (item.age.indexOf(age) && result.indexOf(item.weather)) {
         return true
         console.log(filteredProductTypes)
       } else {
         return false
-    }
-  })
+      }
+    })
 
-  this.setState({productTypes: filteredProductTypes})
-}
-
+    this.setState({productTypes: filteredProductTypes})
+  }
 
   render() {
     return (
@@ -87,87 +85,88 @@ handleCityChange = event => {
           <Header />
 
           <div className="cityDropdownWrapper">
-      <div className="cityDropdown">
-          <select onChange={this.handleCityChange}>
-            <option value="">Välj stad </option>
-            <option value="Stockholm">Stockholm</option>
-            <option value="Göteborg">Göteborg</option>
-            <option value="Malmö">Malmö</option>
-            <option value="Longyearbyen">Longyearbyen</option>
-          </select>
-      </div>
-      </div>
+            <div className="cityDropdown">
+              <select onChange={this.handleCityChange}>
+                <option value="">Välj stad </option>
+                <option value="Stockholm">Stockholm</option>
+                <option value="Göteborg">Göteborg</option>
+                <option value="Malmö">Malmö</option>
+                <option value="Longyearbyen">Longyearbyen</option>
+              </select>
+            </div>
+          </div>
 
+          <div className="VideoContainer">
+            <div className="VideoOverlay">
+              <div className="heroWeather">
+                <Weather
+                  city={this.state.city}
+                  description={this.state.description}
+                  temperature={this.state.temperature} />
+              </div>
+              <video id="background-video" loop autoPlay>
+                <source src="./images/video_start.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
 
-      <div className="VideoContainer">
-        <div className="VideoOverlay">
-        <div className="heroWeather">
-          <Weather city={this.state.city}
-            description={this.state.description}
-            temperature={this.state.temperature}/>
-        </div>
-      <video id="background-video" loop autoPlay>
-        <source src="./images/video_start.mp4" type="video/mp4" />
-      </video>
-      </div>
-      </div>
-
-      <div className="HeroContainer">
+          <div className="HeroContainer">
             <div className="heroWeather">
-              <Weather city={this.state.city}
+              <Weather
+                city={this.state.city}
                 description={this.state.description}
-                temperature={this.state.temperature}/>
+                temperature={this.state.temperature} />
             </div>
             <div className="heroImage">
-            <img src="./images/vader/regn.jpg" />
-          </div>
-          </div>
-          
-      <div className="iconContainer">
-        <h1>Hur gammal är ditt barn?</h1>
-        <div className="iconContainerButtons">
-          <div className="iconMini">
-            <img src="./images/mini/ikon_mini_wht.svg" />
-            <div className="buttonIconContainer">
-              <button onClick={() => this.filterProductTypes("mini")}>0-6mån</button>
+              <img src="./images/vader/regn.jpg" />
             </div>
           </div>
-          <div className="iconCrawl">
-            <img src="./images/crawl/ikon_crawl_wht.svg" />
-            <div className="buttonIconContainer">
-              <button onClick={() => this.filterProductTypes("walk")}>6mån-2 år</button>
+
+          <div className="iconContainer">
+            <h1>Hur gammal är ditt barn?</h1>
+            <div className="iconContainerButtons">
+              <div className="iconMini">
+                <img src="./images/mini/ikon_mini_wht.svg" />
+                <div className="buttonIconContainer">
+                  <button onClick={() => this.filterProductTypes("mini")}>0-6mån</button>
+                </div>
+              </div>
+              <div className="iconCrawl">
+                <img src="./images/crawl/ikon_crawl_wht.svg" />
+                <div className="buttonIconContainer">
+                  <button onClick={() => this.filterProductTypes("walk")}>6mån-2 år</button>
+                </div>
+              </div>
+              <div className="iconCrawl">
+                <img src="./images/crawl/ikon_crawl_wht.svg" />
+                <div className="buttonIconContainer">
+                  <button onClick={() => this.filterProductTypes("talk")}>2-8 år</button>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div className="ProductPageApp">
+
+            {this.state.productTypes.map(product => {
+              return <Product
+                name={product.name}
+                image={product.image}
+                gif={product.gif}
+                age={product.age}
+                description={product.description} />
+            })}
           </div>
-          <div className="iconCrawl">
-            <img src="./images/crawl/ikon_crawl_wht.svg" />
-          <div className="buttonIconContainer">
-            <button onClick={() => this.filterProductTypes("talk")}>2-8 år</button>
+
+          <div className="buttonToProductPage">
+            <Link to="/productpage">
+              <button className="productPageButton">Add product</button>
+            </Link>
           </div>
+
+          <Footer />
+
         </div>
-      </div>
-      </div>
-
-      <div className="ProductPageApp">
-
-      {this.state.productTypes.map((product) => {
-          return <Product name={product.name}
-                   image={product.image}
-                   gif={product.gif}
-                   age={product.age}
-                   description={product.description}
-   />
-      })}
-      </div>
-
-      <div className="buttonToProductPage">
-        <Link to="/productpage">
-          <button className="productPageButton">Add product</button>
-      </Link>
-      </div>
-
-      <Footer />
-
-      </div>
 
       </div>
 
