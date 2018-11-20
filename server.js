@@ -4,6 +4,7 @@ import bodyParser from "body-parser"
 
 const app = express()
 app.use(bodyParser.json())
+app.use(express.static("public"))
 
 const mongoServer = process.env.MONGO_URL || "mongodb://localhost/kladerlek"
 mongoose.connect(mongoServer, { useMongoClient: true })

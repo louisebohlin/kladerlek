@@ -66,9 +66,10 @@ handleCityChange = event => {
 
   filterProductTypes = age => {
     const result = this.tempToWeatherType(this.state.temperatureNumber)
-    console.log(result)
     const filteredProductTypes = productsJson.product.filter(item => {
-      if (item.age.indexOf(age) && result.indexOf(item.weather)) {
+      const hasAge = item.age.includes(age)
+      const hasWeather = result.includes(item.weather)
+      if (hasAge && hasWeather) {
         return true
         console.log(filteredProductTypes)
       } else {
