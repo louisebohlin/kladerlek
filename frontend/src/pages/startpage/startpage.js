@@ -82,93 +82,86 @@ handleCityChange = event => {
 
   render() {
     return (
-      <div>
-        <div className="startPageWrapper">
-          <Header />
-
+    <div>
+      <div className="startPageWrapper">
+        <Header />
           <div className="cityDropdownWrapper">
-      <div className="cityDropdown">
-          <select onChange={this.handleCityChange}>
-            <option value="">Välj stad </option>
-            <option value="Stockholm">Stockholm</option>
-            <option value="Göteborg">Göteborg</option>
-            <option value="Malmö">Malmö</option>
-            <option value="Longyearbyen">Longyearbyen</option>
-          </select>
-      </div>
+            <div className="cityDropdown">
+            <select onChange={this.handleCityChange}>
+              <option value="">Välj stad </option>
+              <option value="Stockholm">Stockholm</option>
+              <option value="Göteborg">Göteborg</option>
+              <option value="Malmö">Malmö</option>
+              <option value="Longyearbyen">Longyearbyen</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="VideoContainer">
+          <div className="VideoOverlay">
+            <div className="heroWeather">
+            <Weather city={this.state.city}
+              description={this.state.description}
+              temperature={this.state.temperature}/>
+            </div>
+          <video id="background-video" loop autoPlay>
+            <source src="./images/video_start.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
-
-      <div className="VideoContainer">
-        <div className="VideoOverlay">
+      <div className="HeroContainer">
         <div className="heroWeather">
           <Weather city={this.state.city}
             description={this.state.description}
             temperature={this.state.temperature}/>
-        </div>
-      <video id="background-video" loop autoPlay>
-        <source src="./images/video_start.mp4" type="video/mp4" />
-      </video>
-      </div>
-      </div>
-
-      <div className="HeroContainer">
-            <div className="heroWeather">
-              <Weather city={this.state.city}
-                description={this.state.description}
-                temperature={this.state.temperature}/>
-            </div>
-            <div className="heroImage">
+          </div>
+          <div className="heroImage">
             <img src="./images/vader/regn.jpg" />
           </div>
-          </div>
-          
-      <div className="iconContainer">
-        <h1>Hur gammal är ditt barn?</h1>
-        <div className="iconContainerButtons">
-          <div className="iconMini">
-            <img src="./images/mini/ikon_mini_wht.svg" />
-            <div className="buttonIconContainer">
-              <button onClick={() => this.filterProductTypes("mini")}>0-6mån</button>
+        </div>
+
+        <div className="iconContainer">
+          <h1>Hur gammal är ditt barn?</h1>
+            <div className="iconContainerButtons">
+              <div className="iconMini">
+                <img src="./images/mini/ikon_mini_wht.svg" />
+                <div className="buttonIconContainer">
+                  <button onClick={() => this.filterProductTypes("mini")}>0-6mån</button>
+                </div>
+              </div>
+              <div className="iconCrawl">
+                <img src="./images/crawl/ikon_crawl_wht.svg" />
+                <div className="buttonIconContainer">
+                  <button onClick={() => this.filterProductTypes("walk")}>6mån-2 år</button>
+                </div>
+              </div>
+              <div className="iconCrawl">
+                <img src="./images/crawl/ikon_crawl_wht.svg" />
+                <div className="buttonIconContainer">
+                  <button onClick={() => this.filterProductTypes("talk")}>2-8 år</button>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="iconCrawl">
-            <img src="./images/crawl/ikon_crawl_wht.svg" />
-            <div className="buttonIconContainer">
-              <button onClick={() => this.filterProductTypes("walk")}>6mån-2 år</button>
+
+          <div className="ProductPageApp">
+          {this.state.productTypes.map((product) => {
+              return <Product name={product.name}
+                       image={product.image}
+                       gif={product.gif}
+                       age={product.age}
+                       description={product.description} />
+          })}
           </div>
+
+          <div className="buttonToProductPage">
+            <Link to="/productpage">
+              <button className="productPageButton">Add product</button>
+            </Link>
           </div>
-          <div className="iconCrawl">
-            <img src="./images/crawl/ikon_crawl_wht.svg" />
-          <div className="buttonIconContainer">
-            <button onClick={() => this.filterProductTypes("talk")}>2-8 år</button>
-          </div>
+          <Footer />
         </div>
-      </div>
-      </div>
-
-      <div className="ProductPageApp">
-
-      {this.state.productTypes.map((product) => {
-          return <Product name={product.name}
-                   image={product.image}
-                   gif={product.gif}
-                   age={product.age}
-                   description={product.description}
-   />
-      })}
-      </div>
-
-      <div className="buttonToProductPage">
-        <Link to="/productpage">
-          <button className="productPageButton">Add product</button>
-      </Link>
-      </div>
-
-      <Footer />
-
-      </div>
-
       </div>
 
     )

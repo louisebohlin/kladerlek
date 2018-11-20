@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 .heroWeather {
   position: absolute;
   margin-left: auto;
@@ -27,7 +26,6 @@
   z-index: 0;
   position: relative;
   margin: 0;
-
   img {
     height: auto;
     width: 100%;
@@ -55,12 +53,12 @@
   height: auto;
   position: relative;
   margin: 0;
-    video {
-      height: auto;
-      width: 100%;
-      opacity: 0.6;
-      z-index: 2;
-    }
+  video {
+    height: auto;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 2;
+  }
 }
 
 .VideoOverlay {
@@ -76,7 +74,6 @@
     width: 80px;
     height: auto;
     z-index: 5;
-
   }
 }
 
@@ -87,11 +84,8 @@
   justify-content: center;
   width: 100%;
   height: 400px;
-  // background-color: #f6f1ef;
   background-color: #74cbbf;
   background-color: #05464f;
-  // background-color: #fae5dd;
-  // background-color: #96a4a4;
   h1 {
     font-family: 'neue-haas-grotesk-display',sans-serif;
     font-size: 40px;
@@ -124,9 +118,6 @@
     font-size: 18px;
     text-decoration: none;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
-    // background-color: Transparent;
-    // border: 2px solid #000;
-    // background-color: #c67f66;
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 25px;
@@ -137,11 +128,10 @@
     transition: width  0.1s;
     transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
     color: #ffffff;
-    p {
-      margin: 0;
-      padding: 0;
-      color: #ffffff;
-
+  p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     }
   }
 }
@@ -149,7 +139,6 @@
 button:hover {
   width: 220px;
   background-color: #ffffff;
-  // color: #ffffff;
   p {
     color: #000000;
     margin: 0;
@@ -247,27 +236,27 @@ button:hover {
 
 .cityDropdown {
   margin-top: 100px;
-   background-color: white;
-   position: absolute;
-   z-index: 2;
-   width: 300px;
-   text-align: center;
-   select {
-       width: 400px;
-       height: 45px;
-       font-family: 'neue-haas-grotesk-display',sans-serif;
-       font-size: 18px;
-       font-weight: 500;
-       padding: 10px;
-       border: none;
-       box-shadow: none;
-       background: transparent;
-       background-image: none;
-       -webkit-appearance: none;
-       select:focus {
-           outline: none;
-       }
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  text-align: center;
+  select {
+    width: 400px;
+    height: 45px;
+    font-family: 'neue-haas-grotesk-display',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+  select:focus {
+    outline: none;
    }
+ }
 }
 
 .ProductPageApp {
@@ -306,9 +295,9 @@ button:hover {
   height: 300px;
   overflow: hidden;
   object-fit: contain;
-}
+  }
   p {
-    color: #393939;
+  color: #393939;
   }
 }
 
@@ -320,12 +309,9 @@ button:hover {
   padding-right: 20px;
   margin-left: 20px;
   height: 300px;
-
   h2 {
-    // color: #6d8a89;
-    color: #393939;
-    // color: #d8b1b1;
-    margin-bottom: 0px;
+  color: #393939;
+  margin-bottom: 0px;
   }
 }
 
@@ -385,27 +371,27 @@ button:hover {
   display: flex;
   justify-content: center;
   button:hover {
-    background-color: #fd6f64;
+  background-color: #fd6f64;
   }
 }
 
 .weatherWrapper {
-    h1, h2, p {
-    color: #ffffff;
-    font-family: 'neue-haas-grotesk-display',sans-serif;
+  h1, h2, p {
+  color: #ffffff;
+  font-family: 'neue-haas-grotesk-display',sans-serif;
   }
   h1 {
-    font-size: 200px;
-    font-weight: 500;
-    margin: 0px;
-    text-transform: capitalize;
+  font-size: 200px;
+  font-weight: 500;
+  margin: 0px;
+  text-transform: capitalize;
   }
   h2 {
-    font-size: 40px;
-    font-weight: 500;
-    margin: 0px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
   }
   p {
     font-size: 25px;
@@ -446,7 +432,26 @@ button:hover {
     width: 100%;
     padding: 0px 30px;
   }
-  h1 {
-    font-size: 20px;
+  .heroImage{
+    width: 150%;
+  }
+  .weatherWrapper h1 {
+    font-size: 80px;
+  }
+  .cityDropdown {
+    display: flex;
+    top: -5%;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 0 0 0 30px;
+    align-items: center;
+   }
+  .headerWrapper {
+  background-color: black;
+  }
+  .header-list li  {
+  display: none;
   }
 }
