@@ -23,16 +23,16 @@ class StartPage extends React.Component {
 
 componentDidMount() {
     this.getWeather()
-}
+  }
 
 handleCityChange = event => {
   this.setState({
-    city: event.target.value,
+    city: event.target.value
   })
 }
 
   getWeather = e => {
-    const weatherAPI = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&units=metric&APPID=ae7f18bdb699e35f5dd3399dba9247c1`;
+    const weatherAPI = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&units=metric&APPID=ae7f18bdb699e35f5dd3399dba9247c1`
     fetch(weatherAPI)
       .then(response => response.json())
       .then(json => {
@@ -54,7 +54,7 @@ handleCityChange = event => {
     }
   }
 
-  tempToWeatherType = (temp) => {
+  tempToWeatherType = temp => {
     if (temp < 0.0) {
       return ["lagom", "kallt", "minusgrader"]
     } else if (temp > 15.0) {
@@ -64,21 +64,19 @@ handleCityChange = event => {
     }
   }
 
-  filterProductTypes = (age )=> {
+  filterProductTypes = age => {
     const result = this.tempToWeatherType(this.state.temperatureNumber)
-
-    const filteredProductTypes = productsJson.product.filter((item) => {
+    const filteredProductTypes = productsJson.product.filter(item => {
       if (item.age.indexOf(age) && result.indexOf(item.weather)) {
         return true
         console.log(filteredProductTypes)
       } else {
         return false
-    }
-  })
+      }
+    })
 
-  this.setState({productTypes: filteredProductTypes})
-}
-
+    this.setState({productTypes: filteredProductTypes})
+  }
 
   render() {
     return (
