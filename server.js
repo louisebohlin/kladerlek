@@ -4,6 +4,7 @@ import bodyParser from "body-parser"
 
 const app = express()
 app.use(bodyParser.json())
+app.use(express.static("public"))
 
 const mongoServer = process.env.MONGO_URL || "mongodb://localhost/kladerlek"
 mongoose.connect(mongoServer, { useMongoClient: true })
@@ -50,6 +51,11 @@ app.get("/products", (req, res) => {
   Product.find().then(products => {
     res.json(products)
   })
+})
+
+app.post("/products", (req, res) => {
+  const product = new Product(req.body)
+  product.save().then(() => { console.log("Created", product.title )})
 })
 
 const port = process.env.PORT || 8080
