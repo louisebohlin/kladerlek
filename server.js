@@ -52,6 +52,11 @@ app.get("/products", (req, res) => {
   })
 })
 
+app.post("/products", (req, res) => {
+  const product = new Product(req.body)
+  product.save().then(() => { console.log("Created", product.title )})
+})
+
 const port = process.env.PORT || 8080
 app.listen(port, () => {
   console.log(`Server running on port ${port}`)
