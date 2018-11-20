@@ -10,6 +10,7 @@ class Footer extends React.Component {
           <div className="footer-container-logo">
             <img src="./images/logo_blk.svg" />
           </div>
+          <div className="footer-container-mobile">
           <div className="footer-info">
             <div className="footer-header">
               <h4>Contact</h4>
@@ -24,6 +25,7 @@ class Footer extends React.Component {
           </div>
             <a href="https://www.linkedin.com/in/kladerlek" target="_blank"><p>LinkedIn</p></a>
             <a href="https://www.facebook.com/kladerlek"><p>Facebook</p></a>
+          </div>
           </div>
 
         </div>

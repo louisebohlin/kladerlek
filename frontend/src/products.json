@@ -17,30 +17,6 @@
 		},
 		{
 			"id": 3,
-			"age": ["mini", "walk", "talk"],
-			"name": "Strumpor",
-			"image": "./images/mini/strumpor.svg",
-			"weather": "lagom",
-			"description": "För extra kalla dagar ha ett par ullstrumpor som lager 1 - innerlagret håller kroppen torr och varm. Beroende på temperaturen avgör du om du behöver en tjockare ullstrumpa över eller om det räcker med en vanlig bomullsstrumpa. Försök hitta strumpor som sitter bra och håller sig kvar på foten när bebisen rör sig och sparkar med benen."
-		},
-		{
-			"id": 4,
-			"age": ["mini"],
-			"name": "Tossor",
-			"image": "./images/mini/tossor.svg",
-			"weather": "lagom",
-			"description": "Vindtäta, vadderade fleecetossor som passar perfect för den nyfödda. Tossorna är tillverkade i återvunnen polyester och har ett mjukt foder i 100% ekologisk bomull, samt ribbad mudd. För extra kalla dagar ha ytterligare ett lager med tunnare ullstrumpa samt en tjockare ullstrumpa över."
-		},
-		{
-			"id": 5,
-    	"age": ["mini", "walk", "talk"],
-			"name": "Mössa och vantar",
-			"image": "./images/mini/mossavante_blk.svg",
-			"weather": "kallt",
-			"description": "Till nyfödda rekommenderas en tunn liten mössa (gärna en hjälmmössa) som skyddar mot väder och vind oavsett årstid. Om det är riktigt kallt kan man ha en extra bomullsmössa över hjälmmössan. Är man något äldre räcker det med en vanlig mössa som har lite skydd för öronen."
-			},
-		{
-			"id": 6,
 			"age": ["mini", "walk"],
 			"name": "Overall",
 			"image": "./images/mini/fleeceoverall.svg",
@@ -48,7 +24,7 @@
 			"description": "Varmt och torrt med ett lager fleece. En vindfleeceoverall med två dragkedjor håller ditt barn värmen hela dagen. Den är lätt att öppna upp om du till exempel ska gå in i en butik eller på ett café och vill slippa krångla med kläderna. Du behöver inte en fleeceoverall om du har en åkpåse. Så länge ditt barn inte börjar sitta upp eller åker i till exempel en pulka klarar man sig fint med en tunn vindfleeceoverall och åkpåse."
 			},
 		{
-			"id": 7,
+			"id": 4,
 			"age": ["walk", "talk"],
 			"name": "Tröja",
 			"image": "./images/crawl/troja.svg",
@@ -56,7 +32,7 @@
 			"description": "En tröja i ekologisk bomull är ett perfekt basplagg att ha i garderoben. För de extra kalla kvällarna är tröjorna av merino ull ett perfekt alternativ. Ull är ett naturfiber som håller värmen bättre än alla andra material, även om barnet skulle bli våt genom sina ytterplagg. Underställ är perfekt att ha under overallen, jackan och termobyxorna."
 		},
     {
-      "id": 8,
+      "id": 5,
 			"age": ["walk", "talk"],
     	"name": "Leggings",
 			"image": "./images/mini/leggings.svg",
@@ -64,13 +40,37 @@
       "description": "Byxor är ett ytterst praktiskt plagg för barn i alla åldrar. Vare sig det är frågan om byxor till barn eller till ungdomar, så är hållbarheten av plagget viktigt."
 	  },
     {
-      "id": 9,
+      "id": 6,
 			"age": ["walk", "talk"],
     	"name": "Jacka",
       "image": "xxx",
 			"weather": "kallt",
       "description": "xxx"
 	  },
+		{
+			"id": 7,
+			"age": ["mini", "walk", "talk"],
+			"name": "Strumpor",
+			"image": "./images/mini/strumpor.svg",
+			"weather": "lagom",
+			"description": "För extra kalla dagar ha ett par ullstrumpor som lager 1 - innerlagret håller kroppen torr och varm. Beroende på temperaturen avgör du om du behöver en tjockare ullstrumpa över eller om det räcker med en vanlig bomullsstrumpa. Försök hitta strumpor som sitter bra och håller sig kvar på foten när bebisen rör sig och sparkar med benen."
+		},
+		{
+			"id": 8,
+			"age": ["mini"],
+			"name": "Tossor",
+			"image": "./images/mini/tossor.svg",
+			"weather": "lagom",
+			"description": "Vindtäta, vadderade fleecetossor som passar perfect för den nyfödda. Tossorna är tillverkade i återvunnen polyester och har ett mjukt foder i 100% ekologisk bomull, samt ribbad mudd. För extra kalla dagar ha ytterligare ett lager med tunnare ullstrumpa samt en tjockare ullstrumpa över."
+		},
+		{
+			"id": 9,
+			"age": ["mini", "walk", "talk"],
+			"name": "Mössa och vantar",
+			"image": "./images/mini/mossavante_blk.svg",
+			"weather": "kallt",
+			"description": "Till nyfödda rekommenderas en tunn liten mössa (gärna en hjälmmössa) som skyddar mot väder och vind oavsett årstid. Om det är riktigt kallt kan man ha en extra bomullsmössa över hjälmmössan. Är man något äldre räcker det med en vanlig mössa som har lite skydd för öronen."
+			},
     {
       "id": 10,
     	"age": ["walk", "talk"],

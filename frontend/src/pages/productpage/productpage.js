@@ -11,7 +11,7 @@ class ProductPage extends React.Component {
     return (
     <div>
       <Header />
-      <div className="VideoContainer">
+      <div className="ProductVideoContainer">
         <div className="VideoOverlay">
       <video id="background-video-product" loop autoPlay>
         <source src="./images/video-product.mp4" type="video/mp4" />
@@ -19,10 +19,31 @@ class ProductPage extends React.Component {
       </div>
       </div>
 
-        <div className="productPageWrapper">
+      <div className="productPageHeader">
+        <h1>Förslag på kläder</h1>
+      </div>
 
-          <h2>Överdelar</h2>
-            <div className="ProductPageContainer">
+      <div className="productPageWrapper">
+        <h2>Överdelar</h2>
+          <div className="ProductPageContainer">
+            <div className="clothingProductPage">
+              <img src="./images/prod.jpg"/>
+              <div className="descProductPageOverlay">
+                <div className="descProductPageText">
+                  <h2>Test</h2>
+                  <p>hej</p>
+                </div>
+              </div>
+            </div>
+            <div className="clothingProductPage">
+              <img src="./images/prod.jpg"/>
+              <div className="descProductPageOverlay">
+                <div className="descProductPageText">
+                  <h2>Test</h2>
+                  <p>hej</p>
+                  </div>
+                </div>
+              </div>
               <div className="clothingProductPage">
                 <img src="./images/prod.jpg"/>
                 <div className="descProductPageOverlay">
@@ -41,6 +62,19 @@ class ProductPage extends React.Component {
                       </div>
                     </div>
                   </div>
+              </div>
+
+              <h2>Underdelar</h2>
+              <div className="ProductPageContainer">
+                <div className="clothingProductPage">
+                  <img src="./images/prod.jpg"/>
+                  <div className="descProductPageOverlay">
+                    <div className="descProductPageText">
+                      <h2>Test</h2>
+                      <p>hej</p>
+                      </div>
+                    </div>
+                  </div>
                   <div className="clothingProductPage">
                     <img src="./images/prod.jpg"/>
                     <div className="descProductPageOverlay">
@@ -50,10 +84,6 @@ class ProductPage extends React.Component {
                         </div>
                       </div>
                     </div>
-                    </div>
-
-                    <h2>Underdelar</h2>
-                    <div className="ProductPageContainer">
                     <div className="clothingProductPage">
                       <img src="./images/prod.jpg"/>
                       <div className="descProductPageOverlay">
@@ -63,6 +93,15 @@ class ProductPage extends React.Component {
                           </div>
                         </div>
                       </div>
+                      <div className="clothingProductPage">
+                        <img src="./images/prod.jpg"/>
+                        <div className="descProductPageOverlay">
+                          <div className="descProductPageText">
+                            <h2>Test</h2>
+                            <p>hej</p>
+                            </div>
+                          </div>
+                        </div>
                 </div>
 
 

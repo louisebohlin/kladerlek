@@ -417,6 +417,7 @@ button:hover {
   .iconContainerButtons {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
   .iconCrawl, .iconMini {
     width: 100%;
@@ -433,10 +434,19 @@ button:hover {
     padding: 0px 30px;
   }
   .heroImage{
-    width: 150%;
+    width: 180%;
+  }
+  .weatherWrapper {
+    margin-top: 40px;
   }
   .weatherWrapper h1 {
     font-size: 80px;
+  }
+  .weatherWrapper h2 {
+    font-size: 55px;
+  }
+  .weatherWrapper p {
+    font-size: 30px;
   }
   .cityDropdown {
     display: flex;
@@ -454,4 +464,51 @@ button:hover {
   .header-list li  {
   display: none;
   }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+
+  }
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer-header h4 {
+    margin: 0px;
+    // margin-bottom: 30px;
+  }
+  .footer-header-soc h4 {
+    margin: 0px;
+  }
+  .footer-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer-container-logo {
+    padding: 0px;
+    margin: 0 0 50px 0;
+    width: 100%;
+    justify-content: center;
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+
 }
