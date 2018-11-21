@@ -43,9 +43,9 @@
 .ProductPageContainer {
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
-  position: relative;
-  overflow: hidden;
+  flex-flow: nowrap;
+  // position: relative;
+  // overflow: hidden;
 }
 
 .ProductVideoContainer {
