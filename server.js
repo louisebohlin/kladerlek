@@ -47,6 +47,10 @@ const Product = mongoose.model("Product", {
 //   product.save().then(() => { console.log("Created", product.title )})
 // })
 
+app.get("/", (req, res) => {
+  res.send("Kläderlek")
+})
+
 app.get("/products", (req, res) => {
   Product.find().then(products => {
     res.json(products)
@@ -55,7 +59,9 @@ app.get("/products", (req, res) => {
 
 app.post("/products", (req, res) => {
   const product = new Product(req.body)
-  product.save().then(() => { console.log("Created", product.title )})
+  product.save()
+    .then(() => { res.status(201).send("Product created") })
+    .catch(err => { res.status(400).send(err) })
 })
 
 const port = process.env.PORT || 8080
