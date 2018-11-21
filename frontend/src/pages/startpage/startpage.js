@@ -18,7 +18,8 @@ class StartPage extends React.Component {
     city: "Stockholm, Sweden",
     filter: "",
     weather: null,
-    productTypes: []
+    productTypes: [],
+    showButton: false
   }
 
 componentDidMount() {
@@ -127,19 +128,19 @@ handleCityChange = event => {
               <div className="iconMini">
                 <img src="./images/mini/ikon_mini.svg" />
                 <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("mini")}>0 - 6 mån</button>
+                  <button onClick={() => this.filterProductTypes("mini") && this.setState({ showButton: !this.state.showButton })}>0 - 6 mån</button>
                 </div>
               </div>
               <div className="iconCrawl">
                 <img src="./images/mini/ikon_walk.svg" />
                 <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("walk")}>6 mån - 2 år</button>
+                  <button onClick={() => this.filterProductTypes("walk") && this.setState({ showButton: !this.state.showButton })}>6 mån - 2 år</button>
                 </div>
               </div>
               <div className="iconCrawl">
                 <img src="./images/mini/ikon_talk.svg" />
                 <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("talk")}>2 - 8 år</button>
+                  <button onClick={() => this.filterProductTypes("talk") && this.setState({ showButton: !this.state.showButton })}>2 - 8 år</button>
                 </div>
               </div>
             </div>
@@ -155,11 +156,11 @@ handleCityChange = event => {
           })}
           </div>
 
-          <div className="buttonToProductPage">
+          {this.state.showButton ? (<div className="buttonToProductPage">
             <Link to="/products">
               <button className="productPageButton">Förslag på kläder</button>
             </Link>
-          </div>
+          </div>) : null}
           <Footer />
         </div>
       </div>
