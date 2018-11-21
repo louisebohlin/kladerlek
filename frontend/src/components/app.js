@@ -10,7 +10,7 @@ render() {
       <Router>
         <div>
           <Route path="/" exact="true" component={StartPage} />
-          <Route path="/productpage" exact="true" component={ProductPage} />
+          <Route path="/products" exact="true" component={ProductPage} />
         </div>
       </Router>
     )

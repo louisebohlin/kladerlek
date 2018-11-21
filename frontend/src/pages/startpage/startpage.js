@@ -156,7 +156,7 @@ handleCityChange = event => {
           </div>
 
           <div className="buttonToProductPage">
-            <Link to="/productpage">
+            <Link to="/products">
               <button className="productPageButton">Förslag på kläder</button>
             </Link>
           </div>
