@@ -15,17 +15,18 @@ button {
   // background-color: Transparent;
   // border: 2px solid #000;
   // background-color: #c67f66;
-  background-color: #fd6f64;
+  // background-color: #fd6f64;
+  background-color: #2b2f3a;
   border-radius: 25px;
   font-family: 'neue-haas-grotesk-display',sans-serif;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 1px;
-  transition: width  0.1s;
-  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  // transition: width  0.1s;
+  // transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 button:hover {
   width: 220px;
-  background-color: #fd6f64;
+  background-color: #40434C;
 }

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.wrap {
+  background-color: #d8b1b1;
+
+}
 .heroWeather {
   position: absolute;
   margin-left: auto;
@@ -64,6 +68,9 @@
 .VideoOverlay {
   background-color: black;
   z-index: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
 }
 
 .iconImage {
@@ -84,16 +91,19 @@
   justify-content: center;
   width: 100%;
   height: 400px;
-  background-color: #74cbbf;
-  background-color: #05464f;
+  // background-color: #74cbbf;
+  // background-color: #2b2f38;
+  // background-color: #e0ad44;
+  background-color: #2b2f3a;
+  // background-color: #05464f;
   h1 {
     font-family: 'neue-haas-grotesk-display',sans-serif;
     font-size: 40px;
-    font-weight: 500;
-    letter-spacing: 1;
+    font-weight: 400;
+    letter-spacing: 1.2px;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 0 30px 0;
   img {
       width: 80px;
       height: auto;
@@ -103,11 +113,12 @@
 }
 
 
+
 .iconContainerButtons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 60px;
+  align-items: center;
   button {
     display: inline-block;
     cursor: pointer;
@@ -125,8 +136,8 @@
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: 1px;
-    transition: width  0.1s;
-    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    // transition: width  0.1s;
+    // transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
     color: #ffffff;
   p {
     margin: 0;
@@ -136,14 +147,19 @@
   }
 }
 
-button:hover {
+.buttonIconContainer button:hover {
   width: 220px;
   background-color: #ffffff;
+  color: #000000;
   p {
     color: #000000;
     margin: 0;
     padding: 0;
   }
+}
+
+.buttonIconContainer {
+  margin-top: 30px;
 }
 
 
@@ -239,7 +255,7 @@ button:hover {
   background-color: white;
   position: absolute;
   z-index: 2;
-  width: 300px;
+  width: 400px;
   text-align: center;
   select {
     width: 400px;
@@ -297,7 +313,7 @@ button:hover {
   object-fit: contain;
   }
   p {
-  color: #393939;
+  color: #2b2f3a;
   }
 }
 
@@ -310,8 +326,16 @@ button:hover {
   margin-left: 20px;
   height: 300px;
   h2 {
-  color: #393939;
-  margin-bottom: 0px;
+  color: #2b2f3a;
+  font-weight: 500;
+  margin-bottom: 10px;
+  }
+  p {
+    color: #2b2f3a;
+    margin: 0;
+    font-size: 20px;
+    // font-weight: 500;
+    line-height: 1.5;
   }
 }
 
@@ -371,7 +395,7 @@ button:hover {
   display: flex;
   justify-content: center;
   button:hover {
-  background-color: #fd6f64;
+  background-color: #40434C;
   }
 }
 
@@ -382,19 +406,19 @@ button:hover {
   }
   h1 {
   font-size: 200px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0px;
   text-transform: capitalize;
   }
   h2 {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 500;
   margin: 0px;
   text-transform: capitalize;
   letter-spacing: 1px;
   }
   p {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
     margin: 0px;
     text-transform: lowercase;

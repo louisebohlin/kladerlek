@@ -82,7 +82,7 @@ handleCityChange = event => {
 
   render() {
     return (
-    <div>
+    <div className="wrap">
       <div className="startPageWrapper">
         <Header />
           <div className="cityDropdownWrapper">
@@ -125,21 +125,21 @@ handleCityChange = event => {
           <h1>Hur gammal är ditt barn?</h1>
             <div className="iconContainerButtons">
               <div className="iconMini">
-                <img src="./images/mini/ikon_mini_wht.svg" />
+                <img src="./images/mini/ikon_mini.svg" />
                 <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("mini")}>0-6mån</button>
+                  <button onClick={() => this.filterProductTypes("mini")}>0 - 6 mån</button>
                 </div>
               </div>
               <div className="iconCrawl">
-                <img src="./images/crawl/ikon_crawl_wht.svg" />
+                <img src="./images/mini/ikon_walk.svg" />
                 <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("walk")}>6mån-2 år</button>
+                  <button onClick={() => this.filterProductTypes("walk")}>6 mån - 2 år</button>
                 </div>
               </div>
               <div className="iconCrawl">
-                <img src="./images/crawl/ikon_crawl_wht.svg" />
+                <img src="./images/mini/ikon_talk.svg" />
                 <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("talk")}>2-8 år</button>
+                  <button onClick={() => this.filterProductTypes("talk")}>2 - 8 år</button>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ handleCityChange = event => {
 
           <div className="buttonToProductPage">
             <Link to="/productpage">
-              <button className="productPageButton">Add product</button>
+              <button className="productPageButton">Förslag på kläder</button>
             </Link>
           </div>
           <Footer />

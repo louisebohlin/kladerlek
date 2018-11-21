@@ -20,6 +20,7 @@ class Product extends React.Component {
             <img src={this.props.gif} />
           </div>
         </div>
+
     )
   }
 }
