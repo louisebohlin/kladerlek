@@ -8,7 +8,7 @@ import Weather from "./weather.js"
 import "./startpage.scss"
 
 const productsJson = require("../../products.json")
-const queryString = require('query-string');
+const queryString = require('query-string')
 
 const LAGOM = "Lagom"
 const MINUSGRADER = "Minusgrader"
@@ -80,55 +80,54 @@ handleCityChange = event => {
     this.setState({
       productTypes: filteredProductTypes,
       age
-        })
+    })
   }
 
   render() {
     return (
-    <div className="wrap">
-      <div className="startPageWrapper">
-        <Header />
+      <div className="wrap">
+        <div className="startPageWrapper">
+          <Header />
           <div className="cityDropdownWrapper">
             <div className="cityDropdown">
-            <select onChange={this.handleCityChange}>
-              <option value="">Välj stad </option>
-              <option value="Stockholm">Stockholm</option>
-              <option value="Göteborg">Göteborg</option>
-              <option value="Malmö">Malmö</option>
-              <option value="Longyearbyen">Longyearbyen</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="VideoContainer">
-          <div className="VideoOverlay">
-            <div className="heroWeather">
-            <Weather city={this.state.city}
-              description={this.state.description}
-              temperature={this.state.temperature}/>
+              <select onChange={this.handleCityChange}>
+                <option value="">Välj stad </option>
+                <option value="Stockholm">Stockholm</option>
+                <option value="Göteborg">Göteborg</option>
+                <option value="Malmö">Malmö</option>
+                <option value="Longyearbyen">Longyearbyen</option>
+              </select>
             </div>
-          <video id="background-video" loop autoPlay>
-            <source src="./images/video_start.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-
-      <div className="HeroContainer">
-      <div className="VideoOverlay">
-        <div className="heroWeather">
-          <Weather city={this.state.city}
-            description={this.state.description}
-            temperature={this.state.temperature}/>
           </div>
-          <div className="heroImage">
-            <img src="./images/vader/regn.jpg" />
+
+          <div className="VideoContainer">
+            <div className="VideoOverlay">
+              <div className="heroWeather">
+                <Weather city={this.state.city}
+                  description={this.state.description}
+                  temperature={this.state.temperature}/>
+              </div>
+              <video id="background-video" loop autoPlay>
+                <source src="./images/video_start.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
-        </div>
-        </div>
 
+          <div className="HeroContainer">
+            <div className="VideoOverlay">
+              <div className="heroWeather">
+                <Weather city={this.state.city}
+                  description={this.state.description}
+                  temperature={this.state.temperature}/>
+              </div>
+              <div className="heroImage">
+                <img src="./images/vader/regn.jpg" />
+              </div>
+            </div>
+          </div>
 
-        <div className="iconContainer">
-          <h1>Hur gammalt är ditt barn?</h1>
+          <div className="iconContainer">
+            <h1>Hur gammalt är ditt barn?</h1>
             <div className="iconContainerButtons">
               <div className="iconMini">
                 <img src="./images/mini/ikon_mini.svg" />
@@ -153,12 +152,12 @@ handleCityChange = event => {
 
           <div className="ProductPageApp">
           {this.state.productTypes.map((product) => {
-              return <Product name={product.name}
+                return <Product name={product.name}
                        image={product.image}
                        gif={product.gif}
                        age={product.age}
                        description={product.description} />
-          })}
+
           </div>
 
           <div className="buttonToProductPage">
