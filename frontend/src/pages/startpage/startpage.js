@@ -8,10 +8,11 @@ import Weather from "./weather.js"
 import "./startpage.scss"
 
 const productsJson = require("../../products.json")
+const queryString = require('query-string');
 
-const LAGOM = "lagom"
-const MINUSGRADER = "minusgrader"
-const KALLT = "kallt"
+const LAGOM = "Lagom"
+const MINUSGRADER = "Minusgrader"
+const KALLT = "Kallt"
 
 class StartPage extends React.Component {
   state = {
@@ -56,11 +57,11 @@ handleCityChange = event => {
 
   tempToWeatherType = temp => {
     if (temp < 0.0) {
-      return ["lagom", "kallt", "minusgrader"]
+      return ["Lagom", "Kallt", "Minusgrader"]
     } else if (temp > 15.0) {
-      return ["lagom"]
+      return ["Lagom"]
     } else {
-      return ["lagom", "kallt"]
+      return ["Lagom", "Kallt"]
     }
   }
 
@@ -76,8 +77,10 @@ handleCityChange = event => {
         return false
       }
     })
-
-    this.setState({productTypes: filteredProductTypes})
+    this.setState({
+      productTypes: filteredProductTypes,
+      age
+        })
   }
 
   render() {
@@ -111,6 +114,7 @@ handleCityChange = event => {
       </div>
 
       <div className="HeroContainer">
+      <div className="VideoOverlay">
         <div className="heroWeather">
           <Weather city={this.state.city}
             description={this.state.description}
@@ -120,9 +124,11 @@ handleCityChange = event => {
             <img src="./images/vader/regn.jpg" />
           </div>
         </div>
+        </div>
+
 
         <div className="iconContainer">
-          <h1>Hur gammal är ditt barn?</h1>
+          <h1>Hur gammalt är ditt barn?</h1>
             <div className="iconContainerButtons">
               <div className="iconMini">
                 <img src="./images/mini/ikon_mini.svg" />
@@ -156,7 +162,7 @@ handleCityChange = event => {
           </div>
 
           <div className="buttonToProductPage">
-            <Link to="/products">
+            <Link to={`/products?age=${this.state.age}&weather=${this.tempToWeatherType(this.state.temperatureNumber)}`}>
               <button className="productPageButton">Förslag på kläder</button>
             </Link>
           </div>

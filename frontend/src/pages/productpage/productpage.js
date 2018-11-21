@@ -6,18 +6,21 @@ import Product from "./product.js"
 import "./productpage.scss"
 
 const productsApi = "https://kladerlek.herokuapp.com/products"
+const queryString = require('query-string');
 
 class ProductPage extends React.Component {
 
     constructor(props) {
       super(props)
       this.state = {
-        products: [],
+        products: []
       }
     }
 
     componentDidMount() {
-      fetch(productsApi).then(response => response.json()).then(json => {
+      const query = queryString.parse(this.props.location.search)
+      console.log(query.weather)
+      fetch(`${productsApi}?age=${query.age}&weather=${query.weather}`).then(response => response.json()).then(json => {
         this.setState({
           products: json
         })
@@ -51,17 +54,9 @@ class ProductPage extends React.Component {
           category={product.category} />)}
       </div>
 
-      <div className="productPage">
-
-      <div className="productPageHeader">
-        <h1>Förslag på kläder</h1>
-        <p></p>
-      </div>
-
       <Product />
 
         <Footer />
-      </div>
     </div>
 
 

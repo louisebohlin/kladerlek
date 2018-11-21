@@ -52,10 +52,21 @@ app.get("/", (req, res) => {
 })
 
 app.get("/products", (req, res) => {
-  Product.find().then(products => {
+  const options = {}
+
+  if (req.query.age) {
+    options.age = req.query.age
+  }
+
+  if (req.query.weather) {
+    options.weather = req.query.weather.split(",")
+  }
+  Product.find(options).then(products => {
     res.json(products)
   })
 })
+
+
 
 app.post("/products", (req, res) => {
   const product = new Product(req.body)
