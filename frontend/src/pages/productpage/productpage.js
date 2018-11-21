@@ -2,6 +2,7 @@ import React from "react"
 import { HashRouter as Router, Route, Link } from "react-router-dom"
 import Header from "../../components/header/header.js"
 import Footer from "../../components/footer/footer.js"
+import Product from "./product.js"
 import "./productpage.scss"
 
 const productsApi = "https://kladerlek.herokuapp.com/products"
@@ -57,99 +58,12 @@ class ProductPage extends React.Component {
         <p></p>
       </div>
 
-      <div className="productPageWrapper">
-        <h2>Överdelar</h2>
-          <div className="ProductPageContainer">
-            <div className="clothingProductPage">
-              <img src="./images/prod.jpg"/>
-              <div className="descProductPageOverlay">
-                <div className="descProductPageText">
-                  <h2>Omlottbody med musapplikation nyfödd blå</h2>
-                  <p>Blå prickig omlottbody i mjuk ekologisk bomull för nyfödd. Bodyn är prydd med en musapplikation på magen</p>
-                  <p>Pris: 199kr</p>
-
-                </div>
-              </div>
-            </div>
-            <div className="clothingProductPage">
-              <img src="./images/prod.jpg"/>
-              <div className="descProductPageOverlay">
-                <div className="descProductPageText">
-                <h2>Omlottbody med musapplikation nyfödd blå</h2>
-                <p>Blå prickig omlottbody i mjuk ekologisk bomull för nyfödd. Bodyn är prydd med en musapplikation på magen</p>
-                <p>Pris: 199kr</p>
-                  </div>
-                </div>
-              </div>
-              <div className="clothingProductPage">
-                <img src="./images/prod.jpg"/>
-                <div className="descProductPageOverlay">
-                  <div className="descProductPageText">
-                  <h2>Omlottbody med musapplikation nyfödd blå</h2>
-                  <p>Blå prickig omlottbody i mjuk ekologisk bomull för nyfödd. Bodyn är prydd med en musapplikation på magen</p>
-                  <p>Pris: 199kr</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="clothingProductPage">
-                  <img src="./images/prod.jpg"/>
-                  <div className="descProductPageOverlay">
-                    <div className="descProductPageText">
-                    <h2>Omlottbody med musapplikation nyfödd blå</h2>
-                    <p>Blå prickig omlottbody i mjuk ekologisk bomull för nyfödd. Bodyn är prydd med en musapplikation på magen</p>
-                    <p>Pris: 199kr</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-              <h2>Underdelar</h2>
-              <div className="ProductPageContainer">
-                <div className="clothingProductPage">
-                  <img src="./images/prod.jpg"/>
-                  <div className="descProductPageOverlay">
-                    <div className="descProductPageText">
-                      <h2>Test</h2>
-                      <p>hej</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="clothingProductPage">
-                    <img src="./images/prod.jpg"/>
-                    <div className="descProductPageOverlay">
-                      <div className="descProductPageText">
-                        <h2>Test</h2>
-                        <p>hej</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="clothingProductPage">
-                      <img src="./images/prod.jpg"/>
-                      <div className="descProductPageOverlay">
-                        <div className="descProductPageText">
-                          <h2>Test</h2>
-                          <p>hej</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="clothingProductPage">
-                        <img src="./images/prod.jpg"/>
-                        <div className="descProductPageOverlay">
-                          <div className="descProductPageText">
-                            <h2>Test</h2>
-                            <p>hej</p>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-
-
-
+      <Product />
 
         <Footer />
       </div>
-      </div>
-      </div>
+    </div>
+
 
 
     )
