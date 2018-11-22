@@ -6,7 +6,7 @@ class Product extends React.Component {
     return (
       <div className="productPageWrapper">
         <div className="clothingProductPage">
-          <img className="productImage" src={this.props.image} alt="" />
+          <a target="_blank" href={this.props.url}><img className="productImage" src={this.props.image} alt="" /></a>
           <div className="descProductPageText">
             <h2>{this.props.title}</h2>
             <p>{this.props.description}</p>
