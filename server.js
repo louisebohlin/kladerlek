@@ -1,10 +1,12 @@
 import mongoose from "mongoose"
 import express from "express"
 import bodyParser from "body-parser"
+import cors from "cors"
 
 const app = express()
 app.use(bodyParser.json())
 app.use(express.static("public"))
+app.use(cors())
 
 const mongoServer = process.env.MONGO_URL || "mongodb://localhost/kladerlek"
 mongoose.connect(mongoServer, { useMongoClient: true })
