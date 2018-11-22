@@ -99,6 +99,7 @@ handleCityChange = event => {
               </select>
             </div>
           </div>
+        </div>
 
           <div className="VideoContainer">
             <div className="VideoOverlay">
@@ -150,6 +151,7 @@ handleCityChange = event => {
             </div>
           </div>
 
+
           <div className="ProductPageApp">
           {this.state.productTypes.map((product) => {
                 return <Product name={product.name}
@@ -157,8 +159,8 @@ handleCityChange = event => {
                        gif={product.gif}
                        age={product.age}
                        description={product.description} />
-
-          </div>
+                    })}
+                </div>
 
           <div className="buttonToProductPage">
             <Link to={`/products?age=${this.state.age}&weather=${this.tempToWeatherType(this.state.temperatureNumber)}`}>
@@ -167,7 +169,6 @@ handleCityChange = event => {
           </div>
           <Footer />
         </div>
-      </div>
 
     )
   }
