@@ -139,6 +139,9 @@
     // transition: width  0.1s;
     // transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
     color: #ffffff;
+    button:selected {
+      background-color: #ffffff;
+    }
   p {
     margin: 0;
     padding: 0;
