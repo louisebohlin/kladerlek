@@ -150,19 +150,20 @@
   }
 }
 
-.buttonIconContainer button:hover {
-  width: 150px;
-  background-color: #ffffff;
-  color: #000000;
-  p {
-    color: #000000;
-    margin: 0;
-    padding: 0;
-  }
-}
+.buttonIconContainer
 
 .buttonIconContainer {
   margin-top: 30px;
+  button:hover, button:selected {
+    width: 150px;
+    background-color: #ffffff;
+    color: #000000;
+    p {
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 .iconMini {
