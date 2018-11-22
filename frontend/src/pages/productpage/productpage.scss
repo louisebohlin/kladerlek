@@ -14,13 +14,14 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  // justify-content: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .productPageWrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 25%;
   h2 {
   font-family: 'neue-haas-grotesk-display',sans-serif;
@@ -31,16 +32,13 @@
 }
 
 .clothingProductPage {
-  padding: 5px 15px 40px 15px;
-  margin: 0px;
+  margin: 0px 0 40px 0;
   width: 100%;
   overflow: hidden;
   img {
     width: auto;
     height: 300px;
-    object-fit: contain;
     border: 1px solid #cecece;
-
   }
   h2 {
     color: #d8b1b1;
@@ -144,12 +142,26 @@
 // }
 
 @media screen and (max-width: 700px) {
+  .productPageTitle {
+    h1 {
+      font-size: 25px;
+      margin: 0px;
+      padding: 20px;
+    }
+  }
   .productPageWrapper {
     width: 50%;
     img {
       width: auto;
       height: 200px;
       object-fit: contain;
+  }
+  .clothingProductPage {
+    // padding: 5px 5px 40px 5px;
+    img {
+      width: auto;
+      height: 170px;
+    }
   }
   .descProductPageText {
     margin: 0;
@@ -171,12 +183,15 @@
     margin-top: 60px;
   }
   .descProductPageText {
+    padding-right: 10px;
     h2 {
-      font-size: 20px;
+      font-size: 16px;
+      text-align: left;
+      padding-right: 0px;
     }
     p {
-
       font-size: 14px;
+      padding-right: 0px;
     }
   }
 }
