@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+.heroImageProduct {
+  display: none;
+}
+
+.HeroContainer {
+  display: none;
+}
+
+.ProductVideoContainer {
+  display: block;
+}
+
 .productPageTitle h1 {
   font-size: 40px;
   font-weight: 600;
@@ -37,10 +49,12 @@
   margin: 0px 0 40px 0;
   width: 100%;
   overflow: hidden;
+  padding: 15px;
   img {
-    width: auto;
-    height: 300px;
+    width: 290px;
+    height: auto;
     border: 1px solid #cecece;
+    object-fit: contain;
   }
   h2 {
     color: #d8b1b1;
@@ -49,11 +63,11 @@
 }
 
 .descProductPageText {
+  padding: 15px;
   text-align: left;
   padding: 0 10px 0 0;
   color: #2b2f3a;
   width: 100%;
-  margin: 0 8%;
   h2 {
     font-size: 20px;
     font-weight: 500;
