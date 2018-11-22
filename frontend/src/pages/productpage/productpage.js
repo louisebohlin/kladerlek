@@ -41,7 +41,7 @@ class ProductPage extends React.Component {
         </div>
 
         <div className="HeroContainer">
-            <div className="heroImage">
+            <div className="heroImageProduct">
               <img src="./images/producthero.png" />
           </div>
         </div>
