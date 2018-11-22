@@ -14,6 +14,10 @@
   display: block;
 }
 
+.productPageTitle {
+  background-color: #f5f5f5;
+}
+
 .productPageTitle h1 {
   font-size: 40px;
   font-weight: 600;
@@ -22,12 +26,17 @@
   padding: 30px;
 }
 
+.productPageBG {
+  background-color: #f5f5f5;
+}
+
 .productsListContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
   // justify-content: center;
   flex-wrap: wrap;
+  background-color: #f5f5f5;
 }
 
 .productPageWrapper {
@@ -45,15 +54,99 @@
   }
 }
 
+
+.overlayButton a {
+  width: 400px;
+  height: 280px;
+  // padding: 12px 48px;
+  text-align: center;
+  color: white;
+  // border: solid 2px white;
+  text-decoration: none;
+}
+
+.overlayButton {
+  position: absolute;
+  width: 400px;
+  // border: solid 2px white;
+  left: 15%;
+  top: 40%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  z-index: 100;
+  cursor: pointer;
+  padding: 12px 20px;
+  height: 50px;
+  width: 200px;
+  margin: 10px 0px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  // background-color: Transparent;
+  // border: 2px solid #000;
+  // background-color: #c67f66;
+  // background-color: #fd6f64;
+  background-color: #2b2f3a;
+  border-radius: 25px;
+  font-family: 'neue-haas-grotesk-display',sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1px;
+
+}
+
+.overlayImage:hover .overlayButton {
+  opacity: 1;
+}
+
+.overlayImage {
+  position: relative;
+  width: 280px;
+  height: 500px;
+  padding: 0;
+  z-index: 0;
+}
+
+.overlayImage img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.overlayImage:after {
+  content: '\A';
+  position: absolute;
+  width: 100%; height:100%;
+  top:0; left:0;
+  background:#f5f5f5;
+
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index: 0;
+
+}
+
+.overlayImage:hover:after {
+  opacity: 0.8;
+  z-index: 0;
+
+}
+
+.clothingProductPage:hover {
+  border: 1px solid #d9ded7;
+}
+
 .clothingProductPage {
   margin: 0px 0 40px 0;
   width: 100%;
   overflow: hidden;
   padding: 15px;
   img {
-    width: 290px;
+    width: 280px;
     height: auto;
-    border: 1px solid #cecece;
+    // border: 1px solid #cecece;
     object-fit: contain;
   }
   h2 {
@@ -62,10 +155,20 @@
   }
 }
 
+
+
+// .overlay {
+//   background-color: #000000;
+//   z-index: 0;
+//   margin: 0;
+//   height: auto;
+//   width: 100%;
+// }
+
 .descProductPageText {
   padding: 15px;
-  text-align: left;
-  padding: 0 10px 0 0;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
   color: #2b2f3a;
   width: 100%;
   h2 {
@@ -74,6 +177,8 @@
     color: #2b2f3a;
     margin-bottom: 0px;
     letter-spacing: 0.2px;
+    text-align: center;
+
   }
   p {
     letter-spacing: 0.2px;
@@ -81,7 +186,7 @@
     color: #2b2f3a;
     font-size: 18px;
     margin-bottom: 0px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.5px;
     padding: 0 10px 0 0;
   }
 }
@@ -168,6 +273,10 @@
   // }
 // }
 
+
+
+
+
 @media screen and (max-width: 700px) {
   .ProductVideoContainer {
     display: none;
@@ -236,12 +345,14 @@
   }
   .descProductPageText {
     padding-right: 10px;
+    text-align: center;
     h2 {
       margin-top: 10px;
       font-size: 16px;
       text-align: left;
       padding-right: 0px;
       font-weight: 500;
+      text-align: center;
     }
     p {
       margin-top: 5px;
@@ -249,5 +360,57 @@
       padding-right: 0px;
       font-weight: 400;
     }
+  }
+  .overlayButton a {
+    width: 100px;
+    height: 20px;
+    // padding: 12px 48px;
+    text-align: center;
+    color: white;
+    // border: solid 2px white;
+    text-decoration: none;
+  }
+  .overlayButton {
+    width: 100px;
+    height: 40px;
+    // border: solid 2px white;
+    left: 20%;
+    top: 40%;
+  }
+
+  .overlayImage:hover .overlayButton {
+    opacity: 1;
+  }
+
+  .overlayImage {
+    position: relative;
+    width: 150px;
+    height: 350px;
+    padding: 0;
+    z-index: 0;
+  }
+
+  .overlayImage img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .overlayImage:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:#f5f5f5;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    z-index: 0;
+
+  }
+
+  .overlayImage:hover:after {
+    opacity: 0.8;
+    z-index: 0;
+
   }
 }

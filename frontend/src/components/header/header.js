@@ -8,12 +8,14 @@ class Header extends React.Component {
     return (
       <div className="headerWrapper">
         <div className="header-info">
-          <Link to="/"><img src="./images/logo.svg" /></Link>
+          <Link to="/">
+          <img className="static" src="./images/logo.svg" />
+          </Link>
           <ul className="header-list">
             <span className="links_line">
-              <Link to="/contact"><li>Guides</li></Link></span>
-            <Link to="/guides"><li>About</li></Link>
-            <Link to="/contact"><li>Contact</li></Link>
+              <li>Guides</li></span>
+              <li>About</li>
+              <li>Contact</li>
           </ul>
         </div>
       </div>

@@ -137,7 +137,10 @@ handleCityChange = event => {
           </div>
 
           <div className="iconContainer">
-            <h1>Barnets ålder?</h1>
+          <div className="iconContainerText">
+            <p>Ange ditt barns ålder så hjälper vi dig att</p>
+            <p>hitta rätt kläder för dagens väder</p>
+            </div>
             <div className="iconContainerButtons">
               <div className="iconMini">
                 <img src="./images/mini/ikon_mini.svg" />

@@ -30,7 +30,7 @@ class ProductPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="productPageBG">
         <Header />
         <div className="ProductVideoContainer">
           <div className="VideoOverlay">
@@ -48,7 +48,7 @@ class ProductPage extends React.Component {
 
 
         <div className="productPageTitle">
-          <h1>Förslag på kläder</h1>
+          <h1>Förslag från oss på Kläderlek</h1>
         </div>
 
         <div className="productsListContainer">
@@ -68,6 +68,7 @@ class ProductPage extends React.Component {
 
         <Footer />
       </div>
+
 
     )
   }
