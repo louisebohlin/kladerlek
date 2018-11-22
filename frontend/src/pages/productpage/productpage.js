@@ -18,6 +18,7 @@ class ProductPage extends React.Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0,0)
     const query = queryString.parse(this.props.location.search)
     console.log(query.weather)
     fetch(`${productsApi}?age=${query.age}&weather=${query.weather}`).then(response => response.json()).then(json => {
