@@ -485,4 +485,12 @@
       height: auto;
     }
   }
+    .buttonToProductPage {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      bottom: 0px;
+      left: 50%;
+
+  }
 }
