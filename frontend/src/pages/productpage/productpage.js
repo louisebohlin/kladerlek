@@ -40,6 +40,13 @@ class ProductPage extends React.Component {
           </div>
         </div>
 
+        <div className="HeroContainer">
+            <div className="heroImage">
+              <img src="./images/producthero.png" />
+          </div>
+        </div>
+
+
         <div className="productPageTitle">
           <h1>Förslag på kläder</h1>
         </div>

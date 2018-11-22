@@ -38,6 +38,25 @@
   }
 }
 
+.heroImageProduct {
+  display: none;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  z-index: 0;
+  position: relative;
+  margin: 0;
+  img {
+    height: auto;
+    width: 100%;
+    // opacity: 0.8;
+    z-index: 2;
+  }
+}
+
 .HeroContainer {
   display: none;
   text-align: center;
@@ -162,7 +181,7 @@
   }
 }
 
-.buttonIconContainer button.selected {
+.buttonIconContainer.selected button {
   width: 150px;
   background-color: #ffffff;
   color: #000000;
@@ -405,8 +424,8 @@
     }
    }
   .headerWrapper {
-  background-color: #000000;
-  opacity: 0.8;
+  // background-color: #000000;
+  // opacity: 0.8;
   }
   .header-list li  {
   display: none;
