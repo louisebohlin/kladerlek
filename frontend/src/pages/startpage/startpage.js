@@ -83,15 +83,14 @@ handleCityChange = event => {
     })
   }
 
-  getButtonClass = (age) => {
-
+  getButtonClass = age => {
+    console.log(age, this.state.age)
     if (age === this.state.age) {
-      return "selected button"
+      return "selected buttonIconContainer"
     } else {
-      return "button"
+      return "buttonIconContainer"
     }
   }
-
 
   render() {
     return (
@@ -142,19 +141,19 @@ handleCityChange = event => {
             <div className="iconContainerButtons">
               <div className="iconMini">
                 <img src="./images/mini/ikon_mini.svg" />
-                <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("mini") && this.getButtonClass("mini")}>0 - 6 mån</button>
+                <div className={this.getButtonClass("mini")}>
+                  <button onClick={() => this.filterProductTypes("mini")}>0 - 6 mån</button>
                 </div>
               </div>
               <div className="iconCrawl">
                 <img src="./images/mini/ikon_walk.svg" />
-                <div className="buttonIconContainer">
+                <div className={this.getButtonClass("walk")}>
                   <button onClick={() => this.filterProductTypes("walk")}>6 mån - 2 år</button>
                 </div>
               </div>
               <div className="iconCrawl">
                 <img src="./images/mini/ikon_talk.svg" />
-                <div className="buttonIconContainer">
+                <div className={this.getButtonClass("talk")}>
                   <button onClick={() => this.filterProductTypes("talk")}>2 - 8 år</button>
                 </div>
               </div>
