@@ -13,7 +13,7 @@
 			"name": "Byxor",
 			"image": "./images/mini/byxor_outline.svg",
 			"weather": "Lagom",
-			"description": "Leggings är det perfekta lekplagget, som finns med olika mönster eller helt enfärgade. Med ett par leggings över bodyn håller du din bebis varm. För de riktigt kalla dagarna rekommenderas tights och långkalsonger av varm ull som absorberar och släpper ut fukt."
+			"description": "Byxor är ett ytterst praktiskt plagg för barn i alla åldrar. Muddarna vid benslut går att vika ned allt eftersom barnet växer. Byxorna har reglerbar midja med knytband. Vare sig det är frågan om byxor till barn eller till ungdomar, så är hållbarheten av plagget viktigt."
 		},
 		{
 			"id": 3,
@@ -37,7 +37,7 @@
     	"name": "Leggings",
 			"image": "./images/mini/leggings_outline.svg",
 			"weather": "Lagom",
-      "description": "Byxor är ett ytterst praktiskt plagg för barn i alla åldrar. Muddarna vid benslut går att vika ned allt eftersom barnet växer. Vare sig det är frågan om byxor till barn eller till ungdomar, så är hållbarheten av plagget viktigt."
+      "description": "Leggings är det perfekta lekplagget, som finns med olika mönster eller helt enfärgade. Med ett par leggings över bodyn eller med en tröja instoppad håller du ditt barn varmt. För de riktigt kalla dagarna rekommenderas tights och långkalsonger av varm ull som absorberar och släpper ut fukt."
 	  },
     {
       "id": 6,
@@ -45,7 +45,7 @@
     	"name": "Jacka",
       "image": "./images/jacket_outline.svg",
 			"weather": "Kallt",
-      "description": "Skönt vadderad och vindtät vinterjacka. Jackan är vattenavvisande och har god andningsförmåga. å insidan av kragen och jackans ärmslut finns ett mjuk fleecefoder och dragkedjan har ett skydd högst upp för att inte skava mot haka och kind."
+      "description": "Skönt vadderad och vindtät vinterjacka. Jackan är vattenavvisande och har god andningsförmåga. På insidan av kragen och jackans ärmslut finns ett mjuk fleecefoder och dragkedjan har ett skydd högst upp för att inte skava mot haka och kind. Går att dra åt i midjan."
 	  },
 		{
 			"id": 7,
@@ -77,7 +77,7 @@
     	"name": "Stövlar",
       "image": "./images/crawl/stovlar_outline.svg",
 			"weather": "Lagom",
-      "description": "Ett par vattentäta gummistövlar förvandlar regn och rusk till en barnlek. Håller dina barns fötter torra och finns både fodrade samt ofodrade varienter beroende på vilken säsong det är."
+      "description": "Ett par vattentäta gummistövlar förvandlar regn och rusk till en barnlek. Håller dina barns fötter torra och finns både fodrade samt ofodrade varienter beroende på vilken säsong det är. Förstärkt bakparti för bättre hållbarhet. Stötdämpande innersula som dessutom är urtagbar. Rejäl sula."
 	  },
 		{
 			"id": 11,
@@ -85,7 +85,7 @@
 			"name": "Skor",
 			"image": "./images/ikon_skor.svg",
 			"weather": "Kallt",
-			"description": "Kavat är barnens bästa vän. Deras snygga och funktionella barnskor har satt märket på kartan och skorna passar perfekt som sällskap på de många äventyr barnen tar med dem på."
+			"description": "Kavat är barnens bästa vän. Deras snygga och funktionella barnskor har satt märket på kartan och skorna passar perfekt som sällskap på de många äventyr barnen tar med dem på. Yttersulan är gjord i EVA med en botten av gummi vilket gör den mycket lätt och greppvänlig."
 		},
 		{
 			"id": 12,
