@@ -209,14 +209,13 @@
       object-fit: contain;
   }
   .clothingProductPage {
-    // padding: 5px 5px 40px 5px;
-    img {
+      margin: 0px 0 10px 0;
+      img {
       width: auto;
       height: 170px;
     }
   }
   .descProductPageText {
-    margin: 0 6%;
     width: 100%;
   }
   .ProductVideoContainer {
@@ -236,15 +235,19 @@
     display: none;
   }
   .descProductPageText {
-    padding-right: 15px;
+    padding-right: 10px;
     h2 {
+      margin-top: 10px;
       font-size: 16px;
       text-align: left;
       padding-right: 0px;
+      font-weight: 500;
     }
     p {
+      margin-top: 5px;
       font-size: 14px;
       padding-right: 0px;
+      font-weight: 400;
     }
   }
 }
