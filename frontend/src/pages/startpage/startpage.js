@@ -160,7 +160,7 @@ handleCityChange = event => {
                        gif={product.gif}
                        age={product.age}
                        description={product.description} />
-
+            })}
           </div>
 
           {this.state.age && <div className="buttonToProductPage">
