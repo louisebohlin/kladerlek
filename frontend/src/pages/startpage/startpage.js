@@ -162,11 +162,11 @@ handleCityChange = event => {
                     })}
                 </div>
 
-          <div className="buttonToProductPage">
+          {this.state.age && <div className="buttonToProductPage">
             <Link to={`/products?age=${this.state.age}&weather=${this.tempToWeatherType(this.state.temperatureNumber)}`}>
               <button className="productPageButton">Förslag på kläder</button>
             </Link>
-          </div>
+          </div>}
           <Footer />
         </div>
 
