@@ -10,7 +10,7 @@ class Product extends React.Component {
           <div className="descProductPageText">
             <h2>{this.props.title}</h2>
             <p>{this.props.description}</p>
-            <p>Pris: {this.props.price}</p>
+            <p>Pris: {this.props.price} kr</p>
           </div>
         </div>
       </div>
