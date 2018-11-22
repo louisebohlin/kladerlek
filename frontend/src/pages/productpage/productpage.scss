@@ -21,13 +21,15 @@
 .productPageWrapper {
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
+  text-align: center;
   width: 25%;
-  h2 {
-  font-family: 'neue-haas-grotesk-display',sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left;
+    h2 {
+      font-family: 'neue-haas-grotesk-display',sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: left;
+
   }
 }
 
@@ -51,7 +53,7 @@
   padding: 0 10px 0 0;
   color: #2b2f3a;
   width: 100%;
-  margin: 0;
+  margin: 0 8%;
   h2 {
     font-size: 20px;
     font-weight: 500;
@@ -195,7 +197,7 @@
     }
   }
   .descProductPageText {
-    margin: 0;
+    margin: 0 6%;
     width: 100%;
   }
   .ProductVideoContainer {

@@ -65,7 +65,6 @@ class ProductPage extends React.Component {
             category={product.category} />)}
         </div>
 
-        <Product />
 
         <Footer />
       </div>
