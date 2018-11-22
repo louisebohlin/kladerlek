@@ -83,6 +83,14 @@ handleCityChange = event => {
     })
   }
 
+  getButtonClass = (age) => {
+
+    if (age === this.state.age) {
+      return "selected button"
+    } else {
+      return "button"
+    }
+  }
 
 
   render() {
@@ -135,7 +143,7 @@ handleCityChange = event => {
               <div className="iconMini">
                 <img src="./images/mini/ikon_mini.svg" />
                 <div className="buttonIconContainer">
-                  <button onClick={() => this.filterProductTypes("mini")}>0 - 6 mån</button>
+                  <button onClick={() => this.filterProductTypes("mini") && this.getButtonClass("mini")}>0 - 6 mån</button>
                 </div>
               </div>
               <div className="iconCrawl">
