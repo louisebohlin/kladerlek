@@ -9,7 +9,7 @@ class Header extends React.Component {
       <div className="headerWrapper">
         <div className="header-info">
           <Link to="/">
-          <img className="static" src="./images/logo.svg" />
+          <img src="./images/logo.svg" />
           </Link>
           <ul className="header-list">
             <span className="links_line">

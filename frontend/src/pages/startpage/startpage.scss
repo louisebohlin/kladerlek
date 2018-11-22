@@ -132,6 +132,7 @@
 }
 
 .iconContainerText {
+  padding: 0 320px 0 320px;
   p {
     font-family: 'neue-haas-grotesk-display',sans-serif;
     font-size: 30px;
@@ -335,7 +336,7 @@
     // background-color: #7aa09f;
   }
   button:hover {
-    background-color: #d85c3a;
+    background-color: #fc574b;
     width: 150px;
   }
 }
@@ -399,8 +400,6 @@
   .iconContainer {
     height: auto;
     h1 {
-      font-size: 24px;
-      font-weight: 500;
       margin-top: 40px;
     }
   }
@@ -417,16 +416,16 @@
     }
   }
   .weatherWrapper {
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .weatherWrapper h1 {
-    font-size: 100px;
+    font-size: 80px;
   }
   .weatherWrapper h2 {
     font-size: 50px;
   }
   .weatherWrapper p {
-    font-size: 24px;
+    font-size: 25px;
   }
   .cityDropdown {
     display: flex;
@@ -510,7 +509,15 @@
       align-items: center;
       position: fixed;
       bottom: 0px;
-      left: 50%;
+      left: 30%;
 
+  }
+  .iconContainerText {
+    padding: 40px 25px  0 25px;
+    text-align: center;
+    margin: 0;
+    p {
+      font-size: 22px;
+  }
   }
 }

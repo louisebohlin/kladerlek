@@ -191,6 +191,10 @@
   }
 }
 
+span {
+  font-size: 18px;
+}
+
 .productImage img {
   display: flex;
   align-items: center;
@@ -297,9 +301,9 @@
   }
   .productPageTitle {
     h1 {
-      font-size: 26px;
+      font-size: 24px;
       margin: 0px;
-      padding: 20px;
+      padding: 40px 40px 20px 40px;
     }
   }
   .heroImageProduct{
@@ -363,7 +367,7 @@
   }
   .overlayButton a {
     width: 100px;
-    height: 20px;
+    height: 15px;
     // padding: 12px 48px;
     text-align: center;
     color: white;
@@ -373,6 +377,7 @@
   .overlayButton {
     width: 100px;
     height: 40px;
+    padding: 8px 16px;
     // border: solid 2px white;
     left: 20%;
     top: 40%;
@@ -384,8 +389,8 @@
 
   .overlayImage {
     position: relative;
-    width: 150px;
-    height: 350px;
+    width: 180px;
+    height: 335px;
     padding: 0;
     z-index: 0;
   }
