@@ -72,6 +72,11 @@
   }
 }
 
+.productImage img {
+  display: flex;
+  align-items: center;
+}
+
 .ProductVideoContainer {
   text-align: center;
   background-repeat: no-repeat;
