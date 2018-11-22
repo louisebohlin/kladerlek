@@ -5,7 +5,7 @@ import cors from "cors"
 
 const app = express()
 app.use(bodyParser.json())
-app.use(express.static("public"))
+app.use(express.static("./frontend/build"))
 app.use(cors())
 
 const mongoServer = process.env.MONGO_URL || "mongodb://localhost/kladerlek"
