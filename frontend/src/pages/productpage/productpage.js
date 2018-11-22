@@ -40,6 +40,10 @@ class ProductPage extends React.Component {
           </div>
         </div>
 
+        <div className="productPageTitle">
+          <h1>Förslag på kläder</h1>
+        </div>
+
         <div className="productsListContainer">
           {this.state.products.map((product, index) => <Product
             key={index}

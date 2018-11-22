@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+.productPageTitle h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 30px;
+}
+
 .productsListContainer {
   width: 100%;
   display: flex;
@@ -23,7 +31,7 @@
 }
 
 .clothingProductPage {
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 40px 15px;
   margin: 0px;
   width: 100%;
   overflow: hidden;
@@ -31,6 +39,8 @@
     width: auto;
     height: 300px;
     object-fit: contain;
+    border: 1px solid #cecece;
+
   }
   h2 {
     color: #d8b1b1;
