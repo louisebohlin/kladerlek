@@ -137,8 +137,8 @@ handleCityChange = event => {
             </div>
           </div>
 
-        <div className="iconContainer">
-          <h1>Barnets ålder?</h1>
+          <div className="iconContainer">
+            <h1>Barnets ålder?</h1>
             <div className="iconContainerButtons">
               <div className="iconMini">
                 <img src="./images/mini/ikon_mini.svg" />
@@ -162,12 +162,12 @@ handleCityChange = event => {
           </div>
 
           <div className="ProductPageApp">
-          {this.state.productTypes.map((product) => {
-                return <Product name={product.name}
-                       image={product.image}
-                       gif={product.gif}
-                       age={product.age}
-                       description={product.description} />
+            {this.state.productTypes.map((product) => {
+              return <Product name={product.name}
+                image={product.image}
+                gif={product.gif}
+                age={product.age}
+                description={product.description} />
             })}
           </div>
 
