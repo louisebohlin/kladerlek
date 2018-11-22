@@ -28,27 +28,6 @@ const Product = mongoose.model("Product", {
   category: String
 })
 
-// const products = [
-//   new Product({
-//     title: "Leggings med blommönster",
-//     price: 179,
-//     description: "Blommönstrade leggings. Plagget har elastisk midja som går att regleras med knapphålsresår.",
-//     url: "https://www.polarnopyret.se/globalassets/productimages-polarnopyret/7325852924056.jpg?ref=4F32C9773D&w=320&h=320&mode=max",
-//     image: "https://www.polarnopyret.se/globalassets/productimages-polarnopyret/7325852924056.jpg?ref=4F32C9773D&w=320&h=320&mode=max",
-//     age: "walk",
-//     weather: {
-//        type: String,
-//        required: true,
-//        enum: ["Kallt", "Minusgrader", "Lagom"]
-//      },
-//     category: "Nederdelar"
-//   })
-// ]
-//
-// products.forEach(product => {
-//   product.save().then(() => { console.log("Created", product.title )})
-// })
-
 app.get("/", (req, res) => {
   res.send("Kläderlek")
 })
@@ -67,7 +46,6 @@ app.get("/products", (req, res) => {
     res.json(products)
   })
 })
-
 
 
 app.post("/products", (req, res) => {
