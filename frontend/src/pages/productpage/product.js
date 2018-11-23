@@ -6,9 +6,8 @@ class Product extends React.Component {
     return (
       <div className="productPageWrapper">
         <div className="clothingProductPage">
-        <div className="overlayImage">
-         <div className="overlayButton"><a target="_blank" href={this.props.url}>Köp</a></div>
-          <img className="productImage" src={this.props.image} alt="" />
+      <a target="_blank" href={this.props.url}>
+          <img className="productImage" src={this.props.image} alt="" /></a>
 
           <div className="descProductPageText">
 
@@ -17,9 +16,8 @@ class Product extends React.Component {
             <p>{this.props.description}</p>
             <p>Pris: {this.props.price} kr</p>
             </div>
+            </div>
 
-          </div>
-        </div>
       </div>
 
     )
