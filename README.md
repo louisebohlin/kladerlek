@@ -1,2 +1,2 @@
 # kladerlek
-Final sprint project under development
+Final sprint project
